@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.magichouselb.com/sitemap.xml
+Sitemap: https://georgesmounzer.colartdigitalmarketingagency.com/sitemap.xml

@@ -45,7 +45,7 @@ One object per product. See `data/products.example.json`.
 Put files in `/assets/img/products`, `/collections`, `/gallery`, `/site`. Export as WebP, about 1200 px on the long side, under 200 KB. Set `width`/`height` in gallery items to the real ratio to avoid layout shift.
 
 ## Deploy (GitHub Pages)
-Settings → Pages → Deploy from branch → `main` / root. `CNAME` is set to `www.magichouselb.com`; at Namecheap add a CNAME record `www` → `<user>.github.io` and the four GitHub A records on `@`. For a different domain, change `baseUrl` and the `CNAME` file, then rebuild.
+Settings → Pages → Deploy from branch → `main` / root. `CNAME` is set to `georgesmounzer.colartdigitalmarketingagency.com` (temporary host; switch `baseUrl` and `CNAME` to `www.magichouselb.com` at launch); at Namecheap add a CNAME record `www` → `<user>.github.io` and the four GitHub A records on `@`. For a different domain, change `baseUrl` and the `CNAME` file, then rebuild.
 
 ## Brand
 Logo files: `assets/img/logo-burgundy.svg`, `logo-cream.svg`, `mark-*.svg` (from the supplied `magic_house.ai`). Colors and fonts are set at the top of `assets/css/style.css`.
