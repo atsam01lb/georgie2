@@ -245,7 +245,33 @@ def page(path, title, desc, body, active=None, og=None, schema=None, noindex=Fal
     if path.endswith(".html"):
         out = ROOT / path.strip("/")
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(head(title, desc, path, og, schema, noindex) + header(active) + body + footer(), encoding="utf-8")
+    doc = head(title, desc, path, og, schema, noindex) + header(active) + body + footer()
+    if path == "/404.html":
+        # GitHub Pages serves 404.html at any depth, so it needs absolute URLs
+        root = BASE + "/"
+    else:
+        depth = len(out.relative_to(ROOT).parts) - 1
+        root = "../" * depth or "./"
+    doc = relativize(doc, root)
+    out.write_text(doc, encoding="utf-8")
+
+
+def relativize(doc, root):
+    """Turn root-relative URLs (/x) into paths relative to the page, so the site
+    works from a subfolder, a project GitHub Pages URL, or opened as local files."""
+    def fix(m):
+        attr, url = m.group(1), m.group(2)
+        if url == "":
+            target = root if root.startswith("http") else root + "index.html"
+        else:
+            target = root + url
+            # local file previews need explicit index.html for folder links
+            if attr == "href" and url.endswith("/") and not root.startswith("http"):
+                target += "index.html"
+        return f'{attr}="{target}'
+    doc = re.sub(r'\b(href|src|data-src|data-full)="/(?!/)([^"]*)', fix, doc)
+    doc = doc.replace('window.MH={', 'window.MH={"root":"%s",' % root, 1)
+    return doc
 
 
 def breadcrumbs(items, left=False):

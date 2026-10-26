@@ -10,6 +10,13 @@
     return cfg.waFallback || "#";
   }
   window.MH_wa = waLink;
+  var ROOT = cfg.root || "/";
+  function rel(u) {
+    if (!u || /^https?:/.test(u)) return u;
+    u = ROOT + u.replace(/^\//, "");
+    if (/\/$/.test(u) && !/^https?:/.test(ROOT)) u += "index.html";
+    return u;
+  }
 
   /* Sticky header shadow */
   var header = $(".site-header");
@@ -54,7 +61,7 @@
     search.classList.add("is-open"); search.removeAttribute("aria-hidden"); document.body.style.overflow = "hidden";
     var input = $("input", search); setTimeout(function () { input.focus(); }, 30);
     if (!index) {
-      fetch("/search.json").then(function (r) { return r.json(); }).then(function (d) { index = d; render(input.value); }).catch(function () { index = []; });
+      fetch(ROOT + "search.json").then(function (r) { return r.json(); }).then(function (d) { index = d; render(input.value); }).catch(function () { index = []; });
     }
   }
   function closeSearch() {
@@ -71,7 +78,7 @@
     empty.textContent = hits.length ? "" : "No products match \u201c" + q + "\u201d. Try another word, or ask us on WhatsApp.";
     hits.forEach(function (p) {
       var li = document.createElement("li");
-      li.innerHTML = '<a href="' + p.u + '">' + (p.i ? '<img src="' + p.i + '" alt="" loading="lazy" width="60" height="60">' : '<span class="thumb"></span>') +
+      li.innerHTML = '<a href="' + rel(p.u) + '">' + (p.i ? '<img src="' + rel(p.i) + '" alt="" loading="lazy" width="60" height="60">' : '<span class="thumb"></span>') +
         '<span><strong></strong><small></small></span></a>';
       $("strong", li).textContent = p.n; $("small", li).textContent = p.c + (p.p ? " \u2013 " + p.p : "");
       list.appendChild(li);
