@@ -310,9 +310,10 @@ def coll_count(slug):
 def collection_card(c):
     n = coll_count(c["slug"])
     media = img_tag(c["cover"], c.get("coverAlt") or c["title"], w=600, h=800) if c.get("cover") else tile_fallback()
-    return f"""<a class="collection-card" href="/collections/{c["slug"]}/">
+    return f"""<a class="collection-card{" is-soon" if c.get("comingSoon") else ""}" href="/collections/{c["slug"]}/">
   <span class="media">{media}</span>
-  <span class="label"><span><h3>{esc(c["title"])}</h3>{f'<span class="count">{n} piece{"s" if n != 1 else ""}</span>' if n else ""}</span>
+  {'<span class="soon">Coming soon</span>' if c.get("comingSoon") else ""}
+  <span class="label"><span><h3>{esc(c["title"])}</h3>{'<span class="count">Coming soon</span>' if c.get("comingSoon") else (f'<span class="count">{n} piece{"s" if n != 1 else ""}</span>' if n else "")}</span>
   <span class="go">{icon("arrow")}</span></span>
 </a>"""
 
@@ -492,7 +493,7 @@ for c in collections:
     rows += f"""<article class="collection-row reveal">
   <a class="media" href="/collections/{c["slug"]}/" tabindex="-1" aria-hidden="true">{media}</a>
   <div class="text"><h2><a href="/collections/{c["slug"]}/" style="text-decoration:none">{esc(c["title"])}</a></h2>
-    {f'<p class="meta">{n} piece{"s" if n != 1 else ""}</p>' if n else ""}
+    {'<p class="meta">Coming soon</p>' if c.get("comingSoon") else (f'<p class="meta">{n} piece{"s" if n != 1 else ""}</p>' if n else "")}
     <p>{esc(c["description"])}</p>
     <a class="btn btn--ghost" href="/collections/{c["slug"]}/">Explore {esc(c["title"])} {icon("arrow")}</a></div>
 </article>"""
@@ -511,7 +512,11 @@ for c in collections:
     items = [p for p in products if p["collection"] == c["slug"]]
     path = f"/collections/{c['slug']}/"
     bc, bc_schema = breadcrumbs([("Home", "/"), ("Collections", "/collections/"), (c["title"], path)])
-    if items:
+    if c.get("comingSoon") and not items:
+        grid = f"""<div class="empty-note"><h3>Coming soon</h3>
+<p>{esc(c.get("comingSoonText") or "This collection is on its way. Message us on WhatsApp to be the first to know when it launches.")}</p>
+<a class="btn" href="{esc(wa(f"Hello Magic House! Please let me know when the {c['title']} is available."))}" target="_blank" rel="noopener">{icon("whatsapp")} Notify me on WhatsApp</a></div>"""
+    elif items:
         grid = f'<div class="product-grid" data-paginate="12">{"".join(product_card(p) for p in items)}</div>'
     else:
         grid = f"""<div class="empty-note"><h3>New pieces coming soon</h3>

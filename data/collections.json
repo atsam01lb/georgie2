@@ -1,5 +1,14 @@
 [
   {
+    "slug": "christmas-collection",
+    "title": "Christmas Collection",
+    "description": "Handmade gypsum Christmas decor and gifts for the holiday season, coming soon to Magic House.",
+    "cover": "",
+    "coverAlt": "",
+    "comingSoon": true,
+    "comingSoonText": "Our Christmas collection is on its way. Message us on WhatsApp to be the first to know when it launches, or to reserve pieces for your holiday gifts."
+  },
+  {
     "slug": "candles-candle-holders",
     "title": "Candles & Candle Holders",
     "description": "Handmade gypsum candles and candle holders, from marble and lotus designs to jar and glitter candles, for calm evenings and beautiful tables.",

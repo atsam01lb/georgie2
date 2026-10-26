@@ -14,7 +14,6 @@
   function rel(u) {
     if (!u || /^https?:/.test(u)) return u;
     u = ROOT + u.replace(/^\//, "");
-    if (/\/$/.test(u) && !/^https?:/.test(ROOT)) u += "index.html";
     return u;
   }
 
