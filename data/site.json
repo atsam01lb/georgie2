@@ -11,17 +11,38 @@
   "location": "",
   "formEndpoint": "",
   "currency": "USD",
-  "heroImage": "",
-  "heroImageAlt": "",
-  "aboutImage": "",
-  "aboutImageAlt": "",
+  "heroImage": "/assets/img/site/hero.webp",
+  "heroImageAlt": "Gypsum tray with lotus candle, incense box, and diffuser by Magic House",
+  "aboutImage": "/assets/img/site/about.webp",
+  "aboutImageAlt": "Blue and white marble-effect gypsum incense box by Magic House",
   "faq": [
-    {"q": "What products does Magic House offer?", "a": "Magic House makes handmade gypsum decor: incense burners and incense boxes, candles and candle holders, decorative trays, souvenirs and gift sets, and home accessories."},
-    {"q": "Are Magic House products handmade?", "a": "Yes. Every piece is cast and finished by hand in Lebanon, so small variations between pieces are part of their character."},
-    {"q": "Can I request customized gifts?", "a": "Yes. Many pieces can be made in custom colors, and gift sets can be put together for occasions. Send your idea on WhatsApp and we will tell you what is possible."},
-    {"q": "How can I order from Magic House?", "a": "Tap Order via WhatsApp on any product. A message with the product name and link opens in WhatsApp, and we confirm availability, price, and delivery with you there."},
-    {"q": "Does Magic House offer products for special occasions?", "a": "Yes. Magic House pieces are made for weddings, baptisms, baby showers, Mother's Day, holidays, and corporate souvenirs, as well as everyday decor."},
-    {"q": "Where is Magic House located?", "a": ""},
-    {"q": "Does Magic House deliver across Lebanon?", "a": ""}
+    {
+      "q": "What products does Magic House offer?",
+      "a": "Magic House makes handmade gypsum pieces: candles and candle holders, incense burners and boxes, incense and candle sets, trays and coasters, religious gifts and decor, wedding and Mother's Day gifts, and decorative gift sets."
+    },
+    {
+      "q": "Are Magic House products handmade?",
+      "a": "Yes. Every piece is cast and finished by hand in Lebanon, so small variations between pieces are part of their character."
+    },
+    {
+      "q": "Can I request customized gifts?",
+      "a": "Yes. Many pieces can be made in custom colors, and gift sets can be put together for occasions. Send your idea on WhatsApp and we will tell you what is possible."
+    },
+    {
+      "q": "How can I order from Magic House?",
+      "a": "Tap Order via WhatsApp on any product. A message with the product name and link opens in WhatsApp, and we confirm availability, price, and delivery with you there."
+    },
+    {
+      "q": "Does Magic House offer products for special occasions?",
+      "a": "Yes. Magic House pieces are made for weddings, baptisms, baby showers, Mother's Day, holidays, and corporate souvenirs, as well as everyday decor."
+    },
+    {
+      "q": "Where is Magic House located?",
+      "a": ""
+    },
+    {
+      "q": "Does Magic House deliver across Lebanon?",
+      "a": ""
+    }
   ]
 }

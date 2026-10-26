@@ -1,1 +1,1141 @@
-[]
+[
+  {
+    "slug": "jar-candle",
+    "name": "Jar Candle",
+    "collection": "candles-candle-holders",
+    "description": "A handmade Jar Candle from Magic House, poured and finished by hand to bring a soft, warm glow to your home or table.",
+    "images": [
+      "/assets/img/products/jar-candle-1.webp"
+    ],
+    "thumb": "/assets/img/products/jar-candle-thumb.webp",
+    "imageAlt": "Jar Candle, handmade by Magic House",
+    "price": 4,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "jar-candle-white",
+    "name": "jar candle White",
+    "collection": "candles-candle-holders",
+    "description": "A handmade jar candle White from Magic House, poured and finished by hand to bring a soft, warm glow to your home or table.",
+    "images": [
+      "/assets/img/products/jar-candle-white-1.webp"
+    ],
+    "thumb": "/assets/img/products/jar-candle-white-thumb.webp",
+    "imageAlt": "jar candle White, handmade by Magic House",
+    "price": 4,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "marble-candle",
+    "name": "Marble Candle",
+    "collection": "candles-candle-holders",
+    "description": "A handmade Marble Candle from Magic House, poured and finished by hand to bring a soft, warm glow to your home or table.",
+    "images": [
+      "/assets/img/products/marble-candle-1.webp"
+    ],
+    "thumb": "/assets/img/products/marble-candle-thumb.webp",
+    "imageAlt": "Marble Candle, handmade by Magic House",
+    "price": 4,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "marble-candle-2",
+    "name": "Marble Candle",
+    "collection": "candles-candle-holders",
+    "description": "A handmade Marble Candle from Magic House, poured and finished by hand to bring a soft, warm glow to your home or table.",
+    "images": [
+      "/assets/img/products/marble-candle-2-1.webp"
+    ],
+    "thumb": "/assets/img/products/marble-candle-2-thumb.webp",
+    "imageAlt": "Marble Candle, handmade by Magic House",
+    "price": 3,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "floral-candle",
+    "name": "Floral Candle",
+    "collection": "candles-candle-holders",
+    "description": "A handmade Floral Candle from Magic House, poured and finished by hand to bring a soft, warm glow to your home or table.",
+    "images": [
+      "/assets/img/products/floral-candle-1.webp"
+    ],
+    "thumb": "/assets/img/products/floral-candle-thumb.webp",
+    "imageAlt": "Floral Candle, handmade by Magic House",
+    "price": 6,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": true
+  },
+  {
+    "slug": "cylindre-angel-candle",
+    "name": "Cylindre Angel Candle",
+    "collection": "candles-candle-holders",
+    "description": "A handmade Cylindre Angel Candle from Magic House, poured and finished by hand to bring a soft, warm glow to your home or table.",
+    "images": [
+      "/assets/img/products/cylindre-angel-candle-1.webp"
+    ],
+    "thumb": "/assets/img/products/cylindre-angel-candle-thumb.webp",
+    "imageAlt": "Cylindre Angel Candle, handmade by Magic House",
+    "price": 5,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "lotus-candle",
+    "name": "Lotus Candle",
+    "collection": "candles-candle-holders",
+    "description": "A handmade Lotus Candle from Magic House, poured and finished by hand to bring a soft, warm glow to your home or table.",
+    "images": [
+      "/assets/img/products/lotus-candle-1.webp"
+    ],
+    "thumb": "/assets/img/products/lotus-candle-thumb.webp",
+    "imageAlt": "Lotus Candle, handmade by Magic House",
+    "price": 5,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "glitter-lotus-candle",
+    "name": "Glitter Lotus Candle",
+    "collection": "candles-candle-holders",
+    "description": "A handmade Glitter Lotus Candle from Magic House, poured and finished by hand to bring a soft, warm glow to your home or table.",
+    "images": [
+      "/assets/img/products/glitter-lotus-candle-1.webp"
+    ],
+    "thumb": "/assets/img/products/glitter-lotus-candle-thumb.webp",
+    "imageAlt": "Glitter Lotus Candle, handmade by Magic House",
+    "price": 5,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "gold-and-white-lotus-glitter",
+    "name": "Gold & White Lotus Glitter",
+    "collection": "candles-candle-holders",
+    "description": "A handmade Gold & White Lotus Glitter from Magic House, poured and finished by hand to bring a soft, warm glow to your home or table.",
+    "images": [
+      "/assets/img/products/gold-and-white-lotus-glitter-1.webp"
+    ],
+    "thumb": "/assets/img/products/gold-and-white-lotus-glitter-thumb.webp",
+    "imageAlt": "Gold & White Lotus Glitter, handmade by Magic House",
+    "price": 4,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "gypsum-candle-yellow",
+    "name": "Gypsum Candle - Yellow",
+    "collection": "candles-candle-holders",
+    "description": "A handmade Gypsum Candle - Yellow from Magic House, poured and finished by hand to bring a soft, warm glow to your home or table.",
+    "images": [
+      "/assets/img/products/gypsum-candle-yellow-1.webp"
+    ],
+    "thumb": "/assets/img/products/gypsum-candle-yellow-thumb.webp",
+    "imageAlt": "Gypsum Candle - Yellow, handmade by Magic House",
+    "price": 3,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "polygonal-candle",
+    "name": "Polygonal Candle",
+    "collection": "candles-candle-holders",
+    "description": "A handmade Polygonal Candle from Magic House, poured and finished by hand to bring a soft, warm glow to your home or table.",
+    "images": [
+      "/assets/img/products/polygonal-candle-1.webp"
+    ],
+    "thumb": "/assets/img/products/polygonal-candle-thumb.webp",
+    "imageAlt": "Polygonal Candle, handmade by Magic House",
+    "price": 4,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "little-stars-candle",
+    "name": "Little Stars Candle",
+    "collection": "candles-candle-holders",
+    "description": "A handmade Little Stars Candle from Magic House, poured and finished by hand to bring a soft, warm glow to your home or table.",
+    "images": [
+      "/assets/img/products/little-stars-candle-1.webp"
+    ],
+    "thumb": "/assets/img/products/little-stars-candle-thumb.webp",
+    "imageAlt": "Little Stars Candle, handmade by Magic House",
+    "price": 3,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "candle-holder-green-and-gold",
+    "name": "Candle Holder Green & Gold",
+    "collection": "candles-candle-holders",
+    "description": "A handmade Candle Holder Green & Gold from Magic House, poured and finished by hand to bring a soft, warm glow to your home or table.",
+    "images": [
+      "/assets/img/products/candle-holder-green-and-gold-1.webp"
+    ],
+    "thumb": "/assets/img/products/candle-holder-green-and-gold-thumb.webp",
+    "imageAlt": "Candle Holder Green & Gold, handmade by Magic House",
+    "price": 4,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "candle-holder-white",
+    "name": "Candle Holder -White",
+    "collection": "candles-candle-holders",
+    "description": "A handmade Candle Holder -White from Magic House, poured and finished by hand to bring a soft, warm glow to your home or table.",
+    "images": [
+      "/assets/img/products/candle-holder-white-1.webp"
+    ],
+    "thumb": "/assets/img/products/candle-holder-white-thumb.webp",
+    "imageAlt": "Candle Holder -White, handmade by Magic House",
+    "price": 3,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "insence-box",
+    "name": "Insence Box",
+    "collection": "incense-burners-boxes",
+    "description": "A hand-cast gypsum Insence Box that keeps your incense or bakhour close at hand and adds a sculpted accent to any shelf or table.",
+    "images": [
+      "/assets/img/products/insence-box-1.webp"
+    ],
+    "thumb": "/assets/img/products/insence-box-thumb.webp",
+    "imageAlt": "Insence Box, handmade by Magic House",
+    "price": 3,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "insence-box-cross",
+    "name": "Insence Box + Cross",
+    "collection": "incense-burners-boxes",
+    "description": "A hand-cast gypsum Insence Box + Cross that keeps your incense or bakhour close at hand and adds a sculpted accent to any shelf or table.",
+    "images": [
+      "/assets/img/products/insence-box-cross-1.webp"
+    ],
+    "thumb": "/assets/img/products/insence-box-cross-thumb.webp",
+    "imageAlt": "Insence Box + Cross, handmade by Magic House",
+    "price": 4,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "floral-insence-box",
+    "name": "Floral Insence Box",
+    "collection": "incense-burners-boxes",
+    "description": "A hand-cast gypsum Floral Insence Box that keeps your incense or bakhour close at hand and adds a sculpted accent to any shelf or table.",
+    "images": [
+      "/assets/img/products/floral-insence-box-1.webp"
+    ],
+    "thumb": "/assets/img/products/floral-insence-box-thumb.webp",
+    "imageAlt": "Floral Insence Box, handmade by Magic House",
+    "price": 5,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": true
+  },
+  {
+    "slug": "floral-insence-box-white-and-blue",
+    "name": "Floral Insence Box White & Blue",
+    "collection": "incense-burners-boxes",
+    "description": "A hand-cast gypsum Floral Insence Box White & Blue that keeps your incense or bakhour close at hand and adds a sculpted accent to any shelf or table.",
+    "images": [
+      "/assets/img/products/floral-insence-box-white-and-blue-1.webp"
+    ],
+    "thumb": "/assets/img/products/floral-insence-box-white-and-blue-thumb.webp",
+    "imageAlt": "Floral Insence Box White & Blue, handmade by Magic House",
+    "price": 3,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "marble-insence-box-white-and-gold",
+    "name": "Marble Insence Box White & Gold",
+    "collection": "incense-burners-boxes",
+    "description": "A hand-cast gypsum Marble Insence Box White & Gold that keeps your incense or bakhour close at hand and adds a sculpted accent to any shelf or table.",
+    "images": [
+      "/assets/img/products/marble-insence-box-white-and-gold-1.webp"
+    ],
+    "thumb": "/assets/img/products/marble-insence-box-white-and-gold-thumb.webp",
+    "imageAlt": "Marble Insence Box White & Gold, handmade by Magic House",
+    "price": 3,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "burner",
+    "name": "Burner",
+    "collection": "incense-burners-boxes",
+    "description": "A hand-cast gypsum Burner that keeps your incense or bakhour close at hand and adds a sculpted accent to any shelf or table.",
+    "images": [
+      "/assets/img/products/burner-1.webp"
+    ],
+    "thumb": "/assets/img/products/burner-thumb.webp",
+    "imageAlt": "Burner, handmade by Magic House",
+    "price": 4,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "hexagon-burner",
+    "name": "Hexagon Burner",
+    "collection": "incense-burners-boxes",
+    "description": "A hand-cast gypsum Hexagon Burner that keeps your incense or bakhour close at hand and adds a sculpted accent to any shelf or table.",
+    "images": [
+      "/assets/img/products/hexagon-burner-1.webp"
+    ],
+    "thumb": "/assets/img/products/hexagon-burner-thumb.webp",
+    "imageAlt": "Hexagon Burner, handmade by Magic House",
+    "price": 4,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "wings-insence-box",
+    "name": "Wings Insence Box",
+    "collection": "incense-burners-boxes",
+    "description": "A hand-cast gypsum Wings Insence Box that keeps your incense or bakhour close at hand and adds a sculpted accent to any shelf or table.",
+    "images": [
+      "/assets/img/products/wings-insence-box-1.webp"
+    ],
+    "thumb": "/assets/img/products/wings-insence-box-thumb.webp",
+    "imageAlt": "Wings Insence Box, handmade by Magic House",
+    "price": 4,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "lotus-insence-box-white",
+    "name": "Lotus Insence Box - White",
+    "collection": "incense-burners-boxes",
+    "description": "A hand-cast gypsum Lotus Insence Box - White that keeps your incense or bakhour close at hand and adds a sculpted accent to any shelf or table.",
+    "images": [
+      "/assets/img/products/lotus-insence-box-white-1.webp"
+    ],
+    "thumb": "/assets/img/products/lotus-insence-box-white-thumb.webp",
+    "imageAlt": "Lotus Insence Box - White, handmade by Magic House",
+    "price": 3,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "marble-insence-box-blue",
+    "name": "Marble Insence Box -Blue",
+    "collection": "incense-burners-boxes",
+    "description": "A hand-cast gypsum Marble Insence Box -Blue that keeps your incense or bakhour close at hand and adds a sculpted accent to any shelf or table.",
+    "images": [
+      "/assets/img/products/marble-insence-box-blue-1.webp"
+    ],
+    "thumb": "/assets/img/products/marble-insence-box-blue-thumb.webp",
+    "imageAlt": "Marble Insence Box -Blue, handmade by Magic House",
+    "price": null,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "incensebox-incense-tray-marble",
+    "name": "incensebox +incense+ tray(marble)",
+    "collection": "incense-candle-sets",
+    "description": "The incensebox +incense+ tray(marble) is a handmade gypsum set, arranged on its tray and ready to display or give as a gift.",
+    "images": [
+      "/assets/img/products/incensebox-incense-tray-marble-1.webp"
+    ],
+    "thumb": "/assets/img/products/incensebox-incense-tray-marble-thumb.webp",
+    "imageAlt": "incensebox +incense+ tray(marble), handmade by Magic House",
+    "price": 6,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "marble-tray-insence-box-blue",
+    "name": "Marble Tray + Insence Box - Blue",
+    "collection": "incense-candle-sets",
+    "description": "The Marble Tray + Insence Box - Blue is a handmade gypsum set, arranged on its tray and ready to display or give as a gift.",
+    "images": [
+      "/assets/img/products/marble-tray-insence-box-blue-1.webp"
+    ],
+    "thumb": "/assets/img/products/marble-tray-insence-box-blue-thumb.webp",
+    "imageAlt": "Marble Tray + Insence Box - Blue, handmade by Magic House",
+    "price": 6,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "marble-tray-insence-box-pink",
+    "name": "Marble Tray + Insence Box - Pink",
+    "collection": "incense-candle-sets",
+    "description": "The Marble Tray + Insence Box - Pink is a handmade gypsum set, arranged on its tray and ready to display or give as a gift.",
+    "images": [
+      "/assets/img/products/marble-tray-insence-box-pink-1.webp"
+    ],
+    "thumb": "/assets/img/products/marble-tray-insence-box-pink-thumb.webp",
+    "imageAlt": "Marble Tray + Insence Box - Pink, handmade by Magic House",
+    "price": 8,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": true
+  },
+  {
+    "slug": "insence-burner-set",
+    "name": "Insence Burner Set",
+    "collection": "incense-candle-sets",
+    "description": "The Insence Burner Set is a handmade gypsum set, arranged on its tray and ready to display or give as a gift.",
+    "images": [
+      "/assets/img/products/insence-burner-set-1.webp"
+    ],
+    "thumb": "/assets/img/products/insence-burner-set-thumb.webp",
+    "imageAlt": "Insence Burner Set, handmade by Magic House",
+    "price": 6,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "insence-set-with-cross",
+    "name": "Insence Set With Cross",
+    "collection": "incense-candle-sets",
+    "description": "The Insence Set With Cross is a handmade gypsum set, arranged on its tray and ready to display or give as a gift.",
+    "images": [
+      "/assets/img/products/insence-set-with-cross-1.webp"
+    ],
+    "thumb": "/assets/img/products/insence-set-with-cross-thumb.webp",
+    "imageAlt": "Insence Set With Cross, handmade by Magic House",
+    "price": 8,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "lotus-incense-set",
+    "name": "Lotus Incense Set",
+    "collection": "incense-candle-sets",
+    "description": "The Lotus Incense Set is a handmade gypsum set, arranged on its tray and ready to display or give as a gift.",
+    "images": [
+      "/assets/img/products/lotus-incense-set-1.webp"
+    ],
+    "thumb": "/assets/img/products/lotus-incense-set-thumb.webp",
+    "imageAlt": "Lotus Incense Set, handmade by Magic House",
+    "price": 10,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": true
+  },
+  {
+    "slug": "polygonal-incense-set",
+    "name": "Polygonal Incense Set",
+    "collection": "incense-candle-sets",
+    "description": "The Polygonal Incense Set is a handmade gypsum set, arranged on its tray and ready to display or give as a gift.",
+    "images": [
+      "/assets/img/products/polygonal-incense-set-1.webp"
+    ],
+    "thumb": "/assets/img/products/polygonal-incense-set-thumb.webp",
+    "imageAlt": "Polygonal Incense Set, handmade by Magic House",
+    "price": 10,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "polygonal-incense-set-name",
+    "name": "Polygonal Incense Set + Name",
+    "collection": "incense-candle-sets",
+    "description": "The Polygonal Incense Set + Name is a handmade gypsum set, arranged on its tray and ready to display or give as a gift.",
+    "images": [
+      "/assets/img/products/polygonal-incense-set-name-1.webp"
+    ],
+    "thumb": "/assets/img/products/polygonal-incense-set-name-thumb.webp",
+    "imageAlt": "Polygonal Incense Set + Name, handmade by Magic House",
+    "price": 12,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": true
+  },
+  {
+    "slug": "insence-set-3-pcs",
+    "name": "Insence Set 3 Pcs",
+    "collection": "incense-candle-sets",
+    "description": "The Insence Set 3 Pcs is a handmade gypsum set, arranged on its tray and ready to display or give as a gift.",
+    "images": [
+      "/assets/img/products/insence-set-3-pcs-1.webp"
+    ],
+    "thumb": "/assets/img/products/insence-set-3-pcs-thumb.webp",
+    "imageAlt": "Insence Set 3 Pcs, handmade by Magic House",
+    "price": 8,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "incense-candle",
+    "name": "Incense + Candle",
+    "collection": "incense-candle-sets",
+    "description": "The Incense + Candle is a handmade gypsum set, arranged on its tray and ready to display or give as a gift.",
+    "images": [
+      "/assets/img/products/incense-candle-1.webp"
+    ],
+    "thumb": "/assets/img/products/incense-candle-thumb.webp",
+    "imageAlt": "Incense + Candle, handmade by Magic House",
+    "price": 8,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "coasters-set",
+    "name": "Coasters Set",
+    "collection": "trays-coasters-decor",
+    "description": "A hand-finished gypsum Coasters Set that adds handmade warmth to your coffee table, shelves, or everyday routine.",
+    "images": [
+      "/assets/img/products/coasters-set-1.webp"
+    ],
+    "thumb": "/assets/img/products/coasters-set-thumb.webp",
+    "imageAlt": "Coasters Set, handmade by Magic House",
+    "price": 6,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "oval-marble-tray-small",
+    "name": "Oval Marble Tray Small",
+    "collection": "trays-coasters-decor",
+    "description": "A hand-finished gypsum Oval Marble Tray Small that adds handmade warmth to your coffee table, shelves, or everyday routine.",
+    "images": [
+      "/assets/img/products/oval-marble-tray-small-1.webp"
+    ],
+    "thumb": "/assets/img/products/oval-marble-tray-small-thumb.webp",
+    "imageAlt": "Oval Marble Tray Small, handmade by Magic House",
+    "price": 3,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "oval-marble-tray-medium",
+    "name": "Oval Marble Tray Medium",
+    "collection": "trays-coasters-decor",
+    "description": "A hand-finished gypsum Oval Marble Tray Medium that adds handmade warmth to your coffee table, shelves, or everyday routine.",
+    "images": [
+      "/assets/img/products/oval-marble-tray-medium-1.webp"
+    ],
+    "thumb": "/assets/img/products/oval-marble-tray-medium-thumb.webp",
+    "imageAlt": "Oval Marble Tray Medium, handmade by Magic House",
+    "price": 4,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "oval-marble-tray-large",
+    "name": "Oval Marble Tray Large",
+    "collection": "trays-coasters-decor",
+    "description": "A hand-finished gypsum Oval Marble Tray Large that adds handmade warmth to your coffee table, shelves, or everyday routine.",
+    "images": [
+      "/assets/img/products/oval-marble-tray-large-1.webp"
+    ],
+    "thumb": "/assets/img/products/oval-marble-tray-large-thumb.webp",
+    "imageAlt": "Oval Marble Tray Large, handmade by Magic House",
+    "price": 5,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "circle-marble-tray-xl",
+    "name": "Circle Marble Tray XL",
+    "collection": "trays-coasters-decor",
+    "description": "A hand-finished gypsum Circle Marble Tray XL that adds handmade warmth to your coffee table, shelves, or everyday routine.",
+    "images": [
+      "/assets/img/products/circle-marble-tray-xl-1.webp"
+    ],
+    "thumb": "/assets/img/products/circle-marble-tray-xl-thumb.webp",
+    "imageAlt": "Circle Marble Tray XL, handmade by Magic House",
+    "price": 8,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "rectangle-tray",
+    "name": "Rectangle Tray",
+    "collection": "trays-coasters-decor",
+    "description": "A hand-finished gypsum Rectangle Tray that adds handmade warmth to your coffee table, shelves, or everyday routine.",
+    "images": [
+      "/assets/img/products/rectangle-tray-1.webp"
+    ],
+    "thumb": "/assets/img/products/rectangle-tray-thumb.webp",
+    "imageAlt": "Rectangle Tray, handmade by Magic House",
+    "price": 6,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "under-mug-large",
+    "name": "Under Mug Large",
+    "collection": "trays-coasters-decor",
+    "description": "A hand-finished gypsum Under Mug Large that adds handmade warmth to your coffee table, shelves, or everyday routine.",
+    "images": [
+      "/assets/img/products/under-mug-large-1.webp"
+    ],
+    "thumb": "/assets/img/products/under-mug-large-thumb.webp",
+    "imageAlt": "Under Mug Large, handmade by Magic House",
+    "price": 3,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "under-mug-small",
+    "name": "Under Mug Small",
+    "collection": "trays-coasters-decor",
+    "description": "A hand-finished gypsum Under Mug Small that adds handmade warmth to your coffee table, shelves, or everyday routine.",
+    "images": [
+      "/assets/img/products/under-mug-small-1.webp"
+    ],
+    "thumb": "/assets/img/products/under-mug-small-thumb.webp",
+    "imageAlt": "Under Mug Small, handmade by Magic House",
+    "price": 2,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "under-mug-set-4-pcs",
+    "name": "Under Mug Set 4 pcs",
+    "collection": "trays-coasters-decor",
+    "description": "A hand-finished gypsum Under Mug Set 4 pcs that adds handmade warmth to your coffee table, shelves, or everyday routine.",
+    "images": [
+      "/assets/img/products/under-mug-set-4-pcs-1.webp"
+    ],
+    "thumb": "/assets/img/products/under-mug-set-4-pcs-thumb.webp",
+    "imageAlt": "Under Mug Set 4 pcs, handmade by Magic House",
+    "price": 8,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "gypsum-pot-cactus",
+    "name": "Gypsum Pot + Cactus",
+    "collection": "trays-coasters-decor",
+    "description": "A hand-finished gypsum Gypsum Pot + Cactus that adds handmade warmth to your coffee table, shelves, or everyday routine.",
+    "images": [
+      "/assets/img/products/gypsum-pot-cactus-1.webp"
+    ],
+    "thumb": "/assets/img/products/gypsum-pot-cactus-thumb.webp",
+    "imageAlt": "Gypsum Pot + Cactus, handmade by Magic House",
+    "price": 4,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "marble-virgin-mary-and-jesus-tray-set-with-incense-burner-and-candle-holder",
+    "name": "marble Virgin Mary & Jesus Tray Set with Incense Burner &candle holder",
+    "collection": "religious-gifts-decor",
+    "description": "marble Virgin Mary & Jesus Tray Set with Incense Burner &candle holder is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/marble-virgin-mary-and-jesus-tray-set-with-incense-burner-and-candle-holder-1.webp"
+    ],
+    "thumb": "/assets/img/products/marble-virgin-mary-and-jesus-tray-set-with-incense-burner-and-candle-holder-thumb.webp",
+    "imageAlt": "marble Virgin Mary & Jesus Tray Set with Incense Burner &candle holder, handmade by Magic House",
+    "price": 8,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "holy-family-statue",
+    "name": "Holy Family Statue",
+    "collection": "religious-gifts-decor",
+    "description": "Holy Family Statue is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/holy-family-statue-1.webp"
+    ],
+    "thumb": "/assets/img/products/holy-family-statue-thumb.webp",
+    "imageAlt": "Holy Family Statue, handmade by Magic House",
+    "price": 8,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "mary-tray-set-incense-burner",
+    "name": "Mary Tray set + Incense Burner",
+    "collection": "religious-gifts-decor",
+    "description": "Mary Tray set + Incense Burner is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/mary-tray-set-incense-burner-1.webp"
+    ],
+    "thumb": "/assets/img/products/mary-tray-set-incense-burner-thumb.webp",
+    "imageAlt": "Mary Tray set + Incense Burner, handmade by Magic House",
+    "price": 10,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "mary-tray-lotus-incense-box",
+    "name": "Mary Tray + Lotus Incense Box",
+    "collection": "religious-gifts-decor",
+    "description": "Mary Tray + Lotus Incense Box is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/mary-tray-lotus-incense-box-1.webp"
+    ],
+    "thumb": "/assets/img/products/mary-tray-lotus-incense-box-thumb.webp",
+    "imageAlt": "Mary Tray + Lotus Incense Box, handmade by Magic House",
+    "price": 12,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "mary-tray-incent-burner-3-pcs",
+    "name": "Mary Tray + Incent Burner 3 Pcs",
+    "collection": "religious-gifts-decor",
+    "description": "Mary Tray + Incent Burner 3 Pcs is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/mary-tray-incent-burner-3-pcs-1.webp"
+    ],
+    "thumb": "/assets/img/products/mary-tray-incent-burner-3-pcs-thumb.webp",
+    "imageAlt": "Mary Tray + Incent Burner 3 Pcs, handmade by Magic House",
+    "price": 10,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "mary-tray-set-with-hexagon-incent-burner",
+    "name": "Mary Tray Set With Hexagon Incent Burner",
+    "collection": "religious-gifts-decor",
+    "description": "Mary Tray Set With Hexagon Incent Burner is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/mary-tray-set-with-hexagon-incent-burner-1.webp"
+    ],
+    "thumb": "/assets/img/products/mary-tray-set-with-hexagon-incent-burner-thumb.webp",
+    "imageAlt": "Mary Tray Set With Hexagon Incent Burner, handmade by Magic House",
+    "price": 10,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "mary-tray",
+    "name": "Mary Tray",
+    "collection": "religious-gifts-decor",
+    "description": "Mary Tray is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/mary-tray-1.webp"
+    ],
+    "thumb": "/assets/img/products/mary-tray-thumb.webp",
+    "imageAlt": "Mary Tray, handmade by Magic House",
+    "price": 4,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "mary-tray-small-candle-holder",
+    "name": "Mary Tray + Small Candle Holder",
+    "collection": "religious-gifts-decor",
+    "description": "Mary Tray + Small Candle Holder is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/mary-tray-small-candle-holder-1.webp"
+    ],
+    "thumb": "/assets/img/products/mary-tray-small-candle-holder-thumb.webp",
+    "imageAlt": "Mary Tray + Small Candle Holder, handmade by Magic House",
+    "price": 6,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "mary-tray-set-lotus-candle",
+    "name": "Mary Tray Set + Lotus Candle",
+    "collection": "religious-gifts-decor",
+    "description": "Mary Tray Set + Lotus Candle is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/mary-tray-set-lotus-candle-1.webp"
+    ],
+    "thumb": "/assets/img/products/mary-tray-set-lotus-candle-thumb.webp",
+    "imageAlt": "Mary Tray Set + Lotus Candle, handmade by Magic House",
+    "price": 8,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "holy-family-tray-set-with-incence",
+    "name": "Holy Family Tray Set With Incence",
+    "collection": "religious-gifts-decor",
+    "description": "Holy Family Tray Set With Incence is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/holy-family-tray-set-with-incence-1.webp"
+    ],
+    "thumb": "/assets/img/products/holy-family-tray-set-with-incence-thumb.webp",
+    "imageAlt": "Holy Family Tray Set With Incence, handmade by Magic House",
+    "price": 15,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": true
+  },
+  {
+    "slug": "divine-blessings",
+    "name": "Divine Blessings",
+    "collection": "religious-gifts-decor",
+    "description": "Divine Blessings is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/divine-blessings-1.webp"
+    ],
+    "thumb": "/assets/img/products/divine-blessings-thumb.webp",
+    "imageAlt": "Divine Blessings, handmade by Magic House",
+    "price": 4,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "light-of-jesus",
+    "name": "Light Of Jesus",
+    "collection": "religious-gifts-decor",
+    "description": "Light Of Jesus is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/light-of-jesus-1.webp"
+    ],
+    "thumb": "/assets/img/products/light-of-jesus-thumb.webp",
+    "imageAlt": "Light Of Jesus, handmade by Magic House",
+    "price": 5,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "heavenly-glow",
+    "name": "Heavenly Glow",
+    "collection": "religious-gifts-decor",
+    "description": "Heavenly Glow is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/heavenly-glow-1.webp"
+    ],
+    "thumb": "/assets/img/products/heavenly-glow-thumb.webp",
+    "imageAlt": "Heavenly Glow, handmade by Magic House",
+    "price": 5,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "gypsum-plexy-mary",
+    "name": "Gypsum - Plexy Mary",
+    "collection": "religious-gifts-decor",
+    "description": "Gypsum - Plexy Mary is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/gypsum-plexy-mary-1.webp"
+    ],
+    "thumb": "/assets/img/products/gypsum-plexy-mary-thumb.webp",
+    "imageAlt": "Gypsum - Plexy Mary, handmade by Magic House",
+    "price": 9,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "gypsum-plexy-st-charbel",
+    "name": "Gypsum - Plexy  St Charbel",
+    "collection": "religious-gifts-decor",
+    "description": "Gypsum - Plexy  St Charbel is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/gypsum-plexy-st-charbel-1.webp"
+    ],
+    "thumb": "/assets/img/products/gypsum-plexy-st-charbel-thumb.webp",
+    "imageAlt": "Gypsum - Plexy  St Charbel, handmade by Magic House",
+    "price": 9,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "gypsum-plexy-jesus",
+    "name": "Gypsum Plexy Jesus",
+    "collection": "religious-gifts-decor",
+    "description": "Gypsum Plexy Jesus is a handmade devotional piece by Magic House, suited to prayer corners, baptisms, first communions, and meaningful gifts.",
+    "images": [
+      "/assets/img/products/gypsum-plexy-jesus-1.webp"
+    ],
+    "thumb": "/assets/img/products/gypsum-plexy-jesus-thumb.webp",
+    "imageAlt": "Gypsum Plexy Jesus, handmade by Magic House",
+    "price": 9,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "gypsum-wedding-set",
+    "name": "Gypsum Wedding Set",
+    "collection": "special-occasion-gifts",
+    "description": "The Gypsum Wedding Set is a handmade gypsum gift by Magic House, made for the occasions you want to remember.",
+    "images": [
+      "/assets/img/products/gypsum-wedding-set-1.webp"
+    ],
+    "thumb": "/assets/img/products/gypsum-wedding-set-thumb.webp",
+    "imageAlt": "Gypsum Wedding Set, handmade by Magic House",
+    "price": 15,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": true
+  },
+  {
+    "slug": "gypsum-mother-gift-pink",
+    "name": "Gypsum Mother Gift - Pink",
+    "collection": "special-occasion-gifts",
+    "description": "The Gypsum Mother Gift - Pink is a handmade gypsum gift by Magic House, made for the occasions you want to remember.",
+    "images": [
+      "/assets/img/products/gypsum-mother-gift-pink-1.webp"
+    ],
+    "thumb": "/assets/img/products/gypsum-mother-gift-pink-thumb.webp",
+    "imageAlt": "Gypsum Mother Gift - Pink, handmade by Magic House",
+    "price": 8,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": true
+  },
+  {
+    "slug": "gypsum-mother-gift-blue",
+    "name": "Gypsum Mother Gift - Blue",
+    "collection": "special-occasion-gifts",
+    "description": "The Gypsum Mother Gift - Blue is a handmade gypsum gift by Magic House, made for the occasions you want to remember.",
+    "images": [
+      "/assets/img/products/gypsum-mother-gift-blue-1.webp"
+    ],
+    "thumb": "/assets/img/products/gypsum-mother-gift-blue-thumb.webp",
+    "imageAlt": "Gypsum Mother Gift - Blue, handmade by Magic House",
+    "price": 8,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "gypsum-mother-gift-yellow",
+    "name": "Gypsum Mother Gift Yellow",
+    "collection": "special-occasion-gifts",
+    "description": "The Gypsum Mother Gift Yellow is a handmade gypsum gift by Magic House, made for the occasions you want to remember.",
+    "images": [
+      "/assets/img/products/gypsum-mother-gift-yellow-1.webp"
+    ],
+    "thumb": "/assets/img/products/gypsum-mother-gift-yellow-thumb.webp",
+    "imageAlt": "Gypsum Mother Gift Yellow, handmade by Magic House",
+    "price": 8,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "gypsum-mother-gift-black",
+    "name": "Gypsum Mother Gift Black",
+    "collection": "special-occasion-gifts",
+    "description": "The Gypsum Mother Gift Black is a handmade gypsum gift by Magic House, made for the occasions you want to remember.",
+    "images": [
+      "/assets/img/products/gypsum-mother-gift-black-1.webp"
+    ],
+    "thumb": "/assets/img/products/gypsum-mother-gift-black-thumb.webp",
+    "imageAlt": "Gypsum Mother Gift Black, handmade by Magic House",
+    "price": 8,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "blue-tray-set-with-vase-and-candle",
+    "name": "Blue Tray Set with vase & Candle",
+    "collection": "decorative-gift-sets",
+    "description": "The Blue Tray Set with vase & Candle pairs a hand-cast gypsum tray with a vase and candle, styled and ready to give or display.",
+    "images": [
+      "/assets/img/products/blue-tray-set-with-vase-and-candle-1.webp"
+    ],
+    "thumb": "/assets/img/products/blue-tray-set-with-vase-and-candle-thumb.webp",
+    "imageAlt": "Blue Tray Set with vase & Candle, handmade by Magic House",
+    "price": 7,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  },
+  {
+    "slug": "white-tray-set-with-vase-and-candle",
+    "name": "White Tray Set With Vase & Candle",
+    "collection": "decorative-gift-sets",
+    "description": "The White Tray Set With Vase & Candle pairs a hand-cast gypsum tray with a vase and candle, styled and ready to give or display.",
+    "images": [
+      "/assets/img/products/white-tray-set-with-vase-and-candle-1.webp"
+    ],
+    "thumb": "/assets/img/products/white-tray-set-with-vase-and-candle-thumb.webp",
+    "imageAlt": "White Tray Set With Vase & Candle, handmade by Magic House",
+    "price": 8,
+    "colors": [],
+    "sizes": [],
+    "customization": "",
+    "available": true,
+    "featured": false
+  }
+]

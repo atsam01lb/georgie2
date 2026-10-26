@@ -19,7 +19,7 @@ Static site for Magic House Lebanon, built for GitHub Pages. Every page is gener
 | `faq` | Questions and answers. An FAQ with an empty `a` is hidden until you confirm the answer (location and delivery are hidden now). |
 
 ### data/collections.json
-The four collections from the brief. Set `cover` to an image path (about 3:4) and `coverAlt` to a short description.
+The seven collections. Set `cover` to an image path (about 3:4) and `coverAlt` to a short description.
 
 ### data/products.json
 One object per product. See `data/products.example.json`.
@@ -28,9 +28,10 @@ One object per product. See `data/products.example.json`.
 |---|---|---|
 | `slug` | yes | URL name: `/products/<slug>/`. Lowercase, hyphens, unique. |
 | `name` | yes | |
-| `collection` | yes | `incense-burners`, `candles`, `souvenirs-gifts`, or `decorative-items` |
+| `collection` | yes | `candles-candle-holders`, `incense-burners-boxes`, `incense-candle-sets`, `trays-coasters-decor`, `religious-gifts-decor`, `special-occasion-gifts`, or `decorative-gift-sets` |
 | `description` | | One or two sentences. |
 | `images` | | List of paths; the first is the main image. Square images work best. |
+| `thumb` | | Smaller copy of the first image (about 560 px) used on cards and search. |
 | `imageAlt` | | Describes the photo for screen readers and Google. |
 | `price` | | Number in USD, or `null` to hide the price. |
 | `colors`, `sizes` | | Lists of text. |

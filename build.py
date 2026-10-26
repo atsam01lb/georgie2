@@ -262,12 +262,9 @@ def relativize(doc, root):
     def fix(m):
         attr, url = m.group(1), m.group(2)
         if url == "":
-            target = root if root.startswith("http") else root + "index.html"
+            target = root
         else:
             target = root + url
-            # local file previews need explicit index.html for folder links
-            if attr == "href" and url.endswith("/") and not root.startswith("http"):
-                target += "index.html"
         return f'{attr}="{target}'
     doc = re.sub(r'\b(href|src|data-src|data-full)="/(?!/)([^"]*)', fix, doc)
     doc = doc.replace('window.MH={', 'window.MH={"root":"%s",' % root, 1)
@@ -288,8 +285,8 @@ def breadcrumbs(items, left=False):
 # ---------- components ----------
 def product_card(p):
     url = f"/products/{p['slug']}/"
-    img = p["images"][0] if p["images"] else ""
-    media = img_tag(img, p.get("imageAlt") or p["name"], w=600, h=600) if img else tile_fallback()
+    img = p.get("thumb") or (p["images"][0] if p["images"] else "")
+    media = img_tag(img, p.get("imageAlt") or p["name"], w=560, h=560) if img else tile_fallback()
     pr = price_text(p)
     badge = '' if p["available"] else '<span class="badge">Currently unavailable</span>'
     return f"""<article class="product-card">
@@ -400,7 +397,7 @@ gallery_preview = ""
 if gallery:
     gallery_preview = f"""<section class="section section--beige" aria-labelledby="glimpse-title"><div class="wrap">
   <div class="section-head reveal">{FLOURISH}<h2 id="glimpse-title">A Glimpse of Magic</h2><p>Arrangements, gift packaging, custom pieces, and the small details.</p></div>
-  {masonry(gallery[:8])}
+  {masonry(([g for g in gallery if g.get('caption') in {p['name'] for p in featured}] or gallery)[:8])}
   <p class="center-link"><a class="btn btn--ghost" href="/gallery/">View Gallery</a></p></div></section>{LIGHTBOX}"""
 
 faq_block, faq_schema = faq_html(site["faq"])
@@ -669,7 +666,7 @@ page("/404.html", "Page not found | Magic House", "This page does not exist.",
 # ---------- search index, sitemap, robots ----------
 (ROOT / "search.json").write_text(json.dumps([
     {"n": p["name"], "u": f"/products/{p['slug']}/", "c": COLL[p["collection"]]["title"], "d": p.get("description", ""),
-     "i": p["images"][0] if p["images"] else "", "p": price_text(p)} for p in products], ensure_ascii=False), encoding="utf-8")
+     "i": p.get("thumb") or (p["images"][0] if p["images"] else ""), "p": price_text(p)} for p in products], ensure_ascii=False), encoding="utf-8")
 
 urls = ["/", "/collections/", "/about/", "/gallery/", "/contact/", "/privacy-policy/"] + \
        [f"/collections/{c['slug']}/" for c in collections] + [f"/products/{p['slug']}/" for p in products]

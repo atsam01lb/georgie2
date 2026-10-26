@@ -1,6 +1,51 @@
 [
-  {"slug": "incense-burners", "title": "Incense Burners", "description": "Hand-cast gypsum incense burners and boxes that hold your bakhour and add a sculpted accent to any shelf or table.", "cover": "", "coverAlt": ""},
-  {"slug": "candles", "title": "Candles", "description": "Handmade candles and gypsum candle holders in soft, elegant shapes for calm evenings and special tables.", "cover": "", "coverAlt": ""},
-  {"slug": "souvenirs-gifts", "title": "Souvenirs & Gifts", "description": "Gift sets and keepsakes made for weddings, baptisms, celebrations, and the people you want to thank.", "cover": "", "coverAlt": ""},
-  {"slug": "decorative-items", "title": "Decorative Items", "description": "Trays, coasters, and decorative pieces in hand-finished gypsum that bring warmth and detail to your home.", "cover": "", "coverAlt": ""}
+  {
+    "slug": "candles-candle-holders",
+    "title": "Candles & Candle Holders",
+    "description": "Handmade gypsum candles and candle holders, from marble and lotus designs to jar and glitter candles, for calm evenings and beautiful tables.",
+    "cover": "/assets/img/collections/candles-candle-holders.webp",
+    "coverAlt": "Candles & Candle Holders by Magic House"
+  },
+  {
+    "slug": "incense-burners-boxes",
+    "title": "Incense Burners & Boxes",
+    "description": "Hand-cast gypsum incense burners and incense boxes in floral, marble, lotus, and hexagon designs that hold your bakhour in style.",
+    "cover": "/assets/img/collections/incense-burners-boxes.webp",
+    "coverAlt": "Incense Burners & Boxes by Magic House"
+  },
+  {
+    "slug": "incense-candle-sets",
+    "title": "Incense & Candle Sets",
+    "description": "Ready-to-gift sets that pair a gypsum tray with incense boxes, burners, and candles, including sets personalized with a name.",
+    "cover": "/assets/img/collections/incense-candle-sets.webp",
+    "coverAlt": "Incense & Candle Sets by Magic House"
+  },
+  {
+    "slug": "trays-coasters-decor",
+    "title": "Trays, Coasters & Home Decor",
+    "description": "Marble-effect gypsum trays in every size, coasters, under-mug pieces, and small decor that bring handmade warmth to your home.",
+    "cover": "/assets/img/collections/trays-coasters-decor.webp",
+    "coverAlt": "Trays, Coasters & Home Decor by Magic House"
+  },
+  {
+    "slug": "religious-gifts-decor",
+    "title": "Religious Gifts & Decor",
+    "description": "Mary, Jesus, Holy Family, and St Charbel pieces in gypsum and plexy, with tray sets for prayer corners, baptisms, and meaningful gifts.",
+    "cover": "/assets/img/collections/religious-gifts-decor.webp",
+    "coverAlt": "Religious Gifts & Decor by Magic House"
+  },
+  {
+    "slug": "special-occasion-gifts",
+    "title": "Special Occasion Gifts",
+    "description": "Handmade gypsum gifts made for weddings, Mother's Day, and the celebrations you want to remember.",
+    "cover": "/assets/img/collections/special-occasion-gifts.webp",
+    "coverAlt": "Special Occasion Gifts by Magic House"
+  },
+  {
+    "slug": "decorative-gift-sets",
+    "title": "Decorative Gift Sets",
+    "description": "Tray sets with a vase and candle, styled and ready to give or to dress up a shelf or table.",
+    "cover": "/assets/img/collections/decorative-gift-sets.webp",
+    "coverAlt": "Decorative Gift Sets by Magic House"
+  }
 ]

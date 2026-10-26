@@ -1,1 +1,605 @@
-[]
+[
+  {
+    "src": "/assets/img/products/jar-candle-1.webp",
+    "thumb": "/assets/img/products/jar-candle-thumb.webp",
+    "alt": "Jar Candle, handmade by Magic House",
+    "caption": "Jar Candle",
+    "category": "Candles & Candle Holders",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/jar-candle-white-1.webp",
+    "thumb": "/assets/img/products/jar-candle-white-thumb.webp",
+    "alt": "jar candle White, handmade by Magic House",
+    "caption": "jar candle White",
+    "category": "Candles & Candle Holders",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/marble-candle-1.webp",
+    "thumb": "/assets/img/products/marble-candle-thumb.webp",
+    "alt": "Marble Candle, handmade by Magic House",
+    "caption": "Marble Candle",
+    "category": "Candles & Candle Holders",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/marble-candle-2-1.webp",
+    "thumb": "/assets/img/products/marble-candle-2-thumb.webp",
+    "alt": "Marble Candle, handmade by Magic House",
+    "caption": "Marble Candle",
+    "category": "Candles & Candle Holders",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/floral-candle-1.webp",
+    "thumb": "/assets/img/products/floral-candle-thumb.webp",
+    "alt": "Floral Candle, handmade by Magic House",
+    "caption": "Floral Candle",
+    "category": "Candles & Candle Holders",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/cylindre-angel-candle-1.webp",
+    "thumb": "/assets/img/products/cylindre-angel-candle-thumb.webp",
+    "alt": "Cylindre Angel Candle, handmade by Magic House",
+    "caption": "Cylindre Angel Candle",
+    "category": "Candles & Candle Holders",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/lotus-candle-1.webp",
+    "thumb": "/assets/img/products/lotus-candle-thumb.webp",
+    "alt": "Lotus Candle, handmade by Magic House",
+    "caption": "Lotus Candle",
+    "category": "Candles & Candle Holders",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/glitter-lotus-candle-1.webp",
+    "thumb": "/assets/img/products/glitter-lotus-candle-thumb.webp",
+    "alt": "Glitter Lotus Candle, handmade by Magic House",
+    "caption": "Glitter Lotus Candle",
+    "category": "Candles & Candle Holders",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/gold-and-white-lotus-glitter-1.webp",
+    "thumb": "/assets/img/products/gold-and-white-lotus-glitter-thumb.webp",
+    "alt": "Gold & White Lotus Glitter, handmade by Magic House",
+    "caption": "Gold & White Lotus Glitter",
+    "category": "Candles & Candle Holders",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/gypsum-candle-yellow-1.webp",
+    "thumb": "/assets/img/products/gypsum-candle-yellow-thumb.webp",
+    "alt": "Gypsum Candle - Yellow, handmade by Magic House",
+    "caption": "Gypsum Candle - Yellow",
+    "category": "Candles & Candle Holders",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/polygonal-candle-1.webp",
+    "thumb": "/assets/img/products/polygonal-candle-thumb.webp",
+    "alt": "Polygonal Candle, handmade by Magic House",
+    "caption": "Polygonal Candle",
+    "category": "Candles & Candle Holders",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/little-stars-candle-1.webp",
+    "thumb": "/assets/img/products/little-stars-candle-thumb.webp",
+    "alt": "Little Stars Candle, handmade by Magic House",
+    "caption": "Little Stars Candle",
+    "category": "Candles & Candle Holders",
+    "width": 529,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/candle-holder-green-and-gold-1.webp",
+    "thumb": "/assets/img/products/candle-holder-green-and-gold-thumb.webp",
+    "alt": "Candle Holder Green & Gold, handmade by Magic House",
+    "caption": "Candle Holder Green & Gold",
+    "category": "Candles & Candle Holders",
+    "width": 560,
+    "height": 315
+  },
+  {
+    "src": "/assets/img/products/candle-holder-white-1.webp",
+    "thumb": "/assets/img/products/candle-holder-white-thumb.webp",
+    "alt": "Candle Holder -White, handmade by Magic House",
+    "caption": "Candle Holder -White",
+    "category": "Candles & Candle Holders",
+    "width": 488,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/insence-box-1.webp",
+    "thumb": "/assets/img/products/insence-box-thumb.webp",
+    "alt": "Insence Box, handmade by Magic House",
+    "caption": "Insence Box",
+    "category": "Incense Burners & Boxes",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/insence-box-cross-1.webp",
+    "thumb": "/assets/img/products/insence-box-cross-thumb.webp",
+    "alt": "Insence Box + Cross, handmade by Magic House",
+    "caption": "Insence Box + Cross",
+    "category": "Incense Burners & Boxes",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/floral-insence-box-1.webp",
+    "thumb": "/assets/img/products/floral-insence-box-thumb.webp",
+    "alt": "Floral Insence Box, handmade by Magic House",
+    "caption": "Floral Insence Box",
+    "category": "Incense Burners & Boxes",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/floral-insence-box-white-and-blue-1.webp",
+    "thumb": "/assets/img/products/floral-insence-box-white-and-blue-thumb.webp",
+    "alt": "Floral Insence Box White & Blue, handmade by Magic House",
+    "caption": "Floral Insence Box White & Blue",
+    "category": "Incense Burners & Boxes",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/marble-insence-box-white-and-gold-1.webp",
+    "thumb": "/assets/img/products/marble-insence-box-white-and-gold-thumb.webp",
+    "alt": "Marble Insence Box White & Gold, handmade by Magic House",
+    "caption": "Marble Insence Box White & Gold",
+    "category": "Incense Burners & Boxes",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/burner-1.webp",
+    "thumb": "/assets/img/products/burner-thumb.webp",
+    "alt": "Burner, handmade by Magic House",
+    "caption": "Burner",
+    "category": "Incense Burners & Boxes",
+    "width": 514,
+    "height": 514
+  },
+  {
+    "src": "/assets/img/products/hexagon-burner-1.webp",
+    "thumb": "/assets/img/products/hexagon-burner-thumb.webp",
+    "alt": "Hexagon Burner, handmade by Magic House",
+    "caption": "Hexagon Burner",
+    "category": "Incense Burners & Boxes",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/wings-insence-box-1.webp",
+    "thumb": "/assets/img/products/wings-insence-box-thumb.webp",
+    "alt": "Wings Insence Box, handmade by Magic House",
+    "caption": "Wings Insence Box",
+    "category": "Incense Burners & Boxes",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/lotus-insence-box-white-1.webp",
+    "thumb": "/assets/img/products/lotus-insence-box-white-thumb.webp",
+    "alt": "Lotus Insence Box - White, handmade by Magic House",
+    "caption": "Lotus Insence Box - White",
+    "category": "Incense Burners & Boxes",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/marble-insence-box-blue-1.webp",
+    "thumb": "/assets/img/products/marble-insence-box-blue-thumb.webp",
+    "alt": "Marble Insence Box -Blue, handmade by Magic House",
+    "caption": "Marble Insence Box -Blue",
+    "category": "Incense Burners & Boxes",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/incensebox-incense-tray-marble-1.webp",
+    "thumb": "/assets/img/products/incensebox-incense-tray-marble-thumb.webp",
+    "alt": "incensebox +incense+ tray(marble), handmade by Magic House",
+    "caption": "incensebox +incense+ tray(marble)",
+    "category": "Incense & Candle Sets",
+    "width": 381,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/marble-tray-insence-box-blue-1.webp",
+    "thumb": "/assets/img/products/marble-tray-insence-box-blue-thumb.webp",
+    "alt": "Marble Tray + Insence Box - Blue, handmade by Magic House",
+    "caption": "Marble Tray + Insence Box - Blue",
+    "category": "Incense & Candle Sets",
+    "width": 422,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/marble-tray-insence-box-pink-1.webp",
+    "thumb": "/assets/img/products/marble-tray-insence-box-pink-thumb.webp",
+    "alt": "Marble Tray + Insence Box - Pink, handmade by Magic House",
+    "caption": "Marble Tray + Insence Box - Pink",
+    "category": "Incense & Candle Sets",
+    "width": 560,
+    "height": 484
+  },
+  {
+    "src": "/assets/img/products/insence-burner-set-1.webp",
+    "thumb": "/assets/img/products/insence-burner-set-thumb.webp",
+    "alt": "Insence Burner Set, handmade by Magic House",
+    "caption": "Insence Burner Set",
+    "category": "Incense & Candle Sets",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/insence-set-with-cross-1.webp",
+    "thumb": "/assets/img/products/insence-set-with-cross-thumb.webp",
+    "alt": "Insence Set With Cross, handmade by Magic House",
+    "caption": "Insence Set With Cross",
+    "category": "Incense & Candle Sets",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/lotus-incense-set-1.webp",
+    "thumb": "/assets/img/products/lotus-incense-set-thumb.webp",
+    "alt": "Lotus Incense Set, handmade by Magic House",
+    "caption": "Lotus Incense Set",
+    "category": "Incense & Candle Sets",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/polygonal-incense-set-1.webp",
+    "thumb": "/assets/img/products/polygonal-incense-set-thumb.webp",
+    "alt": "Polygonal Incense Set, handmade by Magic House",
+    "caption": "Polygonal Incense Set",
+    "category": "Incense & Candle Sets",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/polygonal-incense-set-name-1.webp",
+    "thumb": "/assets/img/products/polygonal-incense-set-name-thumb.webp",
+    "alt": "Polygonal Incense Set + Name, handmade by Magic House",
+    "caption": "Polygonal Incense Set + Name",
+    "category": "Incense & Candle Sets",
+    "width": 560,
+    "height": 314
+  },
+  {
+    "src": "/assets/img/products/insence-set-3-pcs-1.webp",
+    "thumb": "/assets/img/products/insence-set-3-pcs-thumb.webp",
+    "alt": "Insence Set 3 Pcs, handmade by Magic House",
+    "caption": "Insence Set 3 Pcs",
+    "category": "Incense & Candle Sets",
+    "width": 560,
+    "height": 426
+  },
+  {
+    "src": "/assets/img/products/incense-candle-1.webp",
+    "thumb": "/assets/img/products/incense-candle-thumb.webp",
+    "alt": "Incense + Candle, handmade by Magic House",
+    "caption": "Incense + Candle",
+    "category": "Incense & Candle Sets",
+    "width": 560,
+    "height": 537
+  },
+  {
+    "src": "/assets/img/products/coasters-set-1.webp",
+    "thumb": "/assets/img/products/coasters-set-thumb.webp",
+    "alt": "Coasters Set, handmade by Magic House",
+    "caption": "Coasters Set",
+    "category": "Trays, Coasters & Home Decor",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/oval-marble-tray-small-1.webp",
+    "thumb": "/assets/img/products/oval-marble-tray-small-thumb.webp",
+    "alt": "Oval Marble Tray Small, handmade by Magic House",
+    "caption": "Oval Marble Tray Small",
+    "category": "Trays, Coasters & Home Decor",
+    "width": 360,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/oval-marble-tray-medium-1.webp",
+    "thumb": "/assets/img/products/oval-marble-tray-medium-thumb.webp",
+    "alt": "Oval Marble Tray Medium, handmade by Magic House",
+    "caption": "Oval Marble Tray Medium",
+    "category": "Trays, Coasters & Home Decor",
+    "width": 327,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/oval-marble-tray-large-1.webp",
+    "thumb": "/assets/img/products/oval-marble-tray-large-thumb.webp",
+    "alt": "Oval Marble Tray Large, handmade by Magic House",
+    "caption": "Oval Marble Tray Large",
+    "category": "Trays, Coasters & Home Decor",
+    "width": 326,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/circle-marble-tray-xl-1.webp",
+    "thumb": "/assets/img/products/circle-marble-tray-xl-thumb.webp",
+    "alt": "Circle Marble Tray XL, handmade by Magic House",
+    "caption": "Circle Marble Tray XL",
+    "category": "Trays, Coasters & Home Decor",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/rectangle-tray-1.webp",
+    "thumb": "/assets/img/products/rectangle-tray-thumb.webp",
+    "alt": "Rectangle Tray, handmade by Magic House",
+    "caption": "Rectangle Tray",
+    "category": "Trays, Coasters & Home Decor",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/under-mug-large-1.webp",
+    "thumb": "/assets/img/products/under-mug-large-thumb.webp",
+    "alt": "Under Mug Large, handmade by Magic House",
+    "caption": "Under Mug Large",
+    "category": "Trays, Coasters & Home Decor",
+    "width": 551,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/under-mug-small-1.webp",
+    "thumb": "/assets/img/products/under-mug-small-thumb.webp",
+    "alt": "Under Mug Small, handmade by Magic House",
+    "caption": "Under Mug Small",
+    "category": "Trays, Coasters & Home Decor",
+    "width": 551,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/under-mug-set-4-pcs-1.webp",
+    "thumb": "/assets/img/products/under-mug-set-4-pcs-thumb.webp",
+    "alt": "Under Mug Set 4 pcs, handmade by Magic House",
+    "caption": "Under Mug Set 4 pcs",
+    "category": "Trays, Coasters & Home Decor",
+    "width": 448,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/gypsum-pot-cactus-1.webp",
+    "thumb": "/assets/img/products/gypsum-pot-cactus-thumb.webp",
+    "alt": "Gypsum Pot + Cactus, handmade by Magic House",
+    "caption": "Gypsum Pot + Cactus",
+    "category": "Trays, Coasters & Home Decor",
+    "width": 520,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/marble-virgin-mary-and-jesus-tray-set-with-incense-burner-and-candle-holder-1.webp",
+    "thumb": "/assets/img/products/marble-virgin-mary-and-jesus-tray-set-with-incense-burner-and-candle-holder-thumb.webp",
+    "alt": "marble Virgin Mary & Jesus Tray Set with Incense Burner &candle holder, handmade by Magic House",
+    "caption": "marble Virgin Mary & Jesus Tray Set with Incense Burner &candle holder",
+    "category": "Religious Gifts & Decor",
+    "width": 476,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/holy-family-statue-1.webp",
+    "thumb": "/assets/img/products/holy-family-statue-thumb.webp",
+    "alt": "Holy Family Statue, handmade by Magic House",
+    "caption": "Holy Family Statue",
+    "category": "Religious Gifts & Decor",
+    "width": 478,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/mary-tray-set-incense-burner-1.webp",
+    "thumb": "/assets/img/products/mary-tray-set-incense-burner-thumb.webp",
+    "alt": "Mary Tray set + Incense Burner, handmade by Magic House",
+    "caption": "Mary Tray set + Incense Burner",
+    "category": "Religious Gifts & Decor",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/mary-tray-lotus-incense-box-1.webp",
+    "thumb": "/assets/img/products/mary-tray-lotus-incense-box-thumb.webp",
+    "alt": "Mary Tray + Lotus Incense Box, handmade by Magic House",
+    "caption": "Mary Tray + Lotus Incense Box",
+    "category": "Religious Gifts & Decor",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/mary-tray-incent-burner-3-pcs-1.webp",
+    "thumb": "/assets/img/products/mary-tray-incent-burner-3-pcs-thumb.webp",
+    "alt": "Mary Tray + Incent Burner 3 Pcs, handmade by Magic House",
+    "caption": "Mary Tray + Incent Burner 3 Pcs",
+    "category": "Religious Gifts & Decor",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/mary-tray-set-with-hexagon-incent-burner-1.webp",
+    "thumb": "/assets/img/products/mary-tray-set-with-hexagon-incent-burner-thumb.webp",
+    "alt": "Mary Tray Set With Hexagon Incent Burner, handmade by Magic House",
+    "caption": "Mary Tray Set With Hexagon Incent Burner",
+    "category": "Religious Gifts & Decor",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/mary-tray-1.webp",
+    "thumb": "/assets/img/products/mary-tray-thumb.webp",
+    "alt": "Mary Tray, handmade by Magic House",
+    "caption": "Mary Tray",
+    "category": "Religious Gifts & Decor",
+    "width": 497,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/mary-tray-small-candle-holder-1.webp",
+    "thumb": "/assets/img/products/mary-tray-small-candle-holder-thumb.webp",
+    "alt": "Mary Tray + Small Candle Holder, handmade by Magic House",
+    "caption": "Mary Tray + Small Candle Holder",
+    "category": "Religious Gifts & Decor",
+    "width": 358,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/mary-tray-set-lotus-candle-1.webp",
+    "thumb": "/assets/img/products/mary-tray-set-lotus-candle-thumb.webp",
+    "alt": "Mary Tray Set + Lotus Candle, handmade by Magic House",
+    "caption": "Mary Tray Set + Lotus Candle",
+    "category": "Religious Gifts & Decor",
+    "width": 391,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/holy-family-tray-set-with-incence-1.webp",
+    "thumb": "/assets/img/products/holy-family-tray-set-with-incence-thumb.webp",
+    "alt": "Holy Family Tray Set With Incence, handmade by Magic House",
+    "caption": "Holy Family Tray Set With Incence",
+    "category": "Religious Gifts & Decor",
+    "width": 560,
+    "height": 458
+  },
+  {
+    "src": "/assets/img/products/divine-blessings-1.webp",
+    "thumb": "/assets/img/products/divine-blessings-thumb.webp",
+    "alt": "Divine Blessings, handmade by Magic House",
+    "caption": "Divine Blessings",
+    "category": "Religious Gifts & Decor",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/light-of-jesus-1.webp",
+    "thumb": "/assets/img/products/light-of-jesus-thumb.webp",
+    "alt": "Light Of Jesus, handmade by Magic House",
+    "caption": "Light Of Jesus",
+    "category": "Religious Gifts & Decor",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/heavenly-glow-1.webp",
+    "thumb": "/assets/img/products/heavenly-glow-thumb.webp",
+    "alt": "Heavenly Glow, handmade by Magic House",
+    "caption": "Heavenly Glow",
+    "category": "Religious Gifts & Decor",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/gypsum-plexy-mary-1.webp",
+    "thumb": "/assets/img/products/gypsum-plexy-mary-thumb.webp",
+    "alt": "Gypsum - Plexy Mary, handmade by Magic House",
+    "caption": "Gypsum - Plexy Mary",
+    "category": "Religious Gifts & Decor",
+    "width": 560,
+    "height": 496
+  },
+  {
+    "src": "/assets/img/products/gypsum-plexy-st-charbel-1.webp",
+    "thumb": "/assets/img/products/gypsum-plexy-st-charbel-thumb.webp",
+    "alt": "Gypsum - Plexy  St Charbel, handmade by Magic House",
+    "caption": "Gypsum - Plexy  St Charbel",
+    "category": "Religious Gifts & Decor",
+    "width": 478,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/gypsum-plexy-jesus-1.webp",
+    "thumb": "/assets/img/products/gypsum-plexy-jesus-thumb.webp",
+    "alt": "Gypsum Plexy Jesus, handmade by Magic House",
+    "caption": "Gypsum Plexy Jesus",
+    "category": "Religious Gifts & Decor",
+    "width": 560,
+    "height": 556
+  },
+  {
+    "src": "/assets/img/products/gypsum-wedding-set-1.webp",
+    "thumb": "/assets/img/products/gypsum-wedding-set-thumb.webp",
+    "alt": "Gypsum Wedding Set, handmade by Magic House",
+    "caption": "Gypsum Wedding Set",
+    "category": "Special Occasion Gifts",
+    "width": 472,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/gypsum-mother-gift-pink-1.webp",
+    "thumb": "/assets/img/products/gypsum-mother-gift-pink-thumb.webp",
+    "alt": "Gypsum Mother Gift - Pink, handmade by Magic House",
+    "caption": "Gypsum Mother Gift - Pink",
+    "category": "Special Occasion Gifts",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/gypsum-mother-gift-blue-1.webp",
+    "thumb": "/assets/img/products/gypsum-mother-gift-blue-thumb.webp",
+    "alt": "Gypsum Mother Gift - Blue, handmade by Magic House",
+    "caption": "Gypsum Mother Gift - Blue",
+    "category": "Special Occasion Gifts",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/gypsum-mother-gift-yellow-1.webp",
+    "thumb": "/assets/img/products/gypsum-mother-gift-yellow-thumb.webp",
+    "alt": "Gypsum Mother Gift Yellow, handmade by Magic House",
+    "caption": "Gypsum Mother Gift Yellow",
+    "category": "Special Occasion Gifts",
+    "width": 560,
+    "height": 490
+  },
+  {
+    "src": "/assets/img/products/gypsum-mother-gift-black-1.webp",
+    "thumb": "/assets/img/products/gypsum-mother-gift-black-thumb.webp",
+    "alt": "Gypsum Mother Gift Black, handmade by Magic House",
+    "caption": "Gypsum Mother Gift Black",
+    "category": "Special Occasion Gifts",
+    "width": 560,
+    "height": 545
+  },
+  {
+    "src": "/assets/img/products/blue-tray-set-with-vase-and-candle-1.webp",
+    "thumb": "/assets/img/products/blue-tray-set-with-vase-and-candle-thumb.webp",
+    "alt": "Blue Tray Set with vase & Candle, handmade by Magic House",
+    "caption": "Blue Tray Set with vase & Candle",
+    "category": "Decorative Gift Sets",
+    "width": 560,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/white-tray-set-with-vase-and-candle-1.webp",
+    "thumb": "/assets/img/products/white-tray-set-with-vase-and-candle-thumb.webp",
+    "alt": "White Tray Set With Vase & Candle, handmade by Magic House",
+    "caption": "White Tray Set With Vase & Candle",
+    "category": "Decorative Gift Sets",
+    "width": 522,
+    "height": 560
+  }
+]
