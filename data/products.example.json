@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "blue-white-tray-set",
+    "name": "Blue & White Tray Set",
+    "collection": "decorative-items",
+    "description": "A hand-cast gypsum tray with a matching incense burner and box, finished in soft blue and white.",
+    "images": ["/assets/img/products/blue-white-tray-set-1.webp", "/assets/img/products/blue-white-tray-set-2.webp"],
+    "imageAlt": "Blue and white gypsum tray with incense burner and box",
+    "price": 4,
+    "colors": ["Blue & white"],
+    "sizes": ["Tray 2.5 × 11 × 18 cm", "Incense burner 7.5 × 7.5 × 7.5 cm"],
+    "customization": "Custom colors available on request.",
+    "available": true,
+    "featured": true
+  }
+]
