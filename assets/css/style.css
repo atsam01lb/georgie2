@@ -440,3 +440,15 @@ p { margin: 0 0 1em; }
 .btn--text:hover { background: none; border-color: transparent; color: var(--burgundy-dark); }
 .shop-count { text-align: center; color: var(--muted); font-size: .9rem; margin: -1rem 0 1.5rem; }
 .footer-bottom a { text-decoration: underline; }
+
+/* Basket thank-you */
+.basket__thanks { display: none; text-align: center; padding: 1.5rem .3rem 1rem; }
+.basket.is-thanks .basket__thanks { display: block; }
+.basket.is-thanks .basket__items, .basket.is-thanks .basket__foot, .basket.is-thanks .basket__empty { display: none !important; }
+.basket__thanks .tk-icon { display: grid; place-items: center; width: 64px; height: 64px; margin: 0 auto 1rem; border-radius: 999px 999px 18px 18px; border: 1px solid var(--gold); color: var(--burgundy); }
+.basket__thanks .tk-icon svg { width: 28px; height: 28px; }
+.basket__thanks h3 { font-size: 1.9rem; }
+.basket__thanks h3:focus { outline: none; }
+.basket__thanks p { color: var(--muted); font-size: .95rem; }
+.basket__thanks .tk-sum { color: var(--burgundy); font-family: var(--serif); font-size: 1.3rem; }
+.basket__thanks .btn { width: 100%; margin-top: .6rem; }

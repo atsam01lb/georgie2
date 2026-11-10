@@ -251,20 +251,46 @@
       if (!ok) return;
       var total = 0, unpriced = false;
       var lines = cart.map(function (it, i) {
-        var line = (i + 1) + ". " + it.name + " x " + it.qty;
-        if (it.price == null) { unpriced = true; line += ": price on request"; }
-        else { total += it.price * it.qty; line += ": " + money(it.price * it.qty); }
+        var line = (i + 1) + ". " + it.name + "\n   Qty: " + it.qty;
+        if (it.price == null) { unpriced = true; line += ", price on request"; }
+        else { total += it.price * it.qty; line += " x " + money(it.price) + " = " + money(it.price * it.qty); }
         return line;
       });
-      var base = (location.origin && location.origin !== "null") ? location.href.replace(/[#?].*$/, "") : "";
-      var msg = "Hello Magic House! I would like to place an order:\n\n" + lines.join("\n") +
-        "\n\nTotal: " + money(total) + (unpriced ? " (plus items with price on request)" : "") +
-        "\n\nName: " + bform.name.value.trim() + "\nDelivery: " + bform.address.value.trim() +
-        (bform.note.value.trim() ? "\nNotes: " + bform.note.value.trim() : "") +
-        "\n\nPlease confirm availability and delivery.";
-      window.open(waLink(msg), "_blank", "noopener");
-      toast("WhatsApp opened with your order. Tap send there to confirm.");
+      var d = new Date(), pad = function (n) { return (n < 10 ? "0" : "") + n; };
+      var ref = "MH-" + pad(d.getMonth() + 1) + pad(d.getDate()) + "-" + Math.floor(1000 + Math.random() * 9000);
+      var name = bform.name.value.trim(), addr = bform.address.value.trim(), note = bform.note.value.trim();
+      var pieces = count();
+      var msg = "Hello Magic House!\nI would like to place an order from your website.\n\n" +
+        "*Order " + ref + "*\n\n" + lines.join("\n\n") +
+        "\n\n*Total: " + money(total) + "*" + (unpriced ? " (plus items with price on request)" : "") +
+        " for " + pieces + " piece" + (pieces === 1 ? "" : "s") +
+        "\n\n*Customer details*\nName: " + name + "\nDelivery: " + addr + (note ? "\nNotes: " + note : "") +
+        "\n\nPlease confirm availability, delivery, and the final total.\nThank you!";
+      var link = waLink(msg);
+      window.open(link, "_blank", "noopener");
+      showThanks(name, ref, link, total, unpriced);
     });
+  }
+  function showThanks(name, ref, link, total, unpriced) {
+    var t = $(".basket__thanks", basketEl); if (!t) return;
+    $(".tk-name", t).textContent = name.split(" ")[0];
+    $(".tk-ref", t).textContent = ref;
+    $(".tk-total", t).textContent = money(total) + (unpriced ? " + items with price on request" : "");
+    $(".tk-again", t).href = link;
+    basketEl.classList.add("is-thanks");
+    setTimeout(function () { var h = $("h3", t); h && h.focus(); }, 60);
+  }
+  if (basketEl) {
+    var tdone = $("[data-thanks-done]", basketEl);
+    tdone && tdone.addEventListener("click", function () {
+      cart = []; save(); renderBasket();
+      basketEl.classList.remove("is-thanks");
+      $(".basket__form", basketEl).reset();
+      closeBasket();
+      toast("Thank you for your order!");
+    });
+    var tback = $("[data-thanks-back]", basketEl);
+    tback && tback.addEventListener("click", function () { basketEl.classList.remove("is-thanks"); });
   }
   $$("[data-add]").forEach(function (btn) {
     btn.addEventListener("click", function () {

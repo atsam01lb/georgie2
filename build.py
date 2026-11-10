@@ -215,6 +215,16 @@ def header(active):
       <a class="btn btn--ghost" href="/shop/">Browse the shop</a>
     </div>
     <ul class="basket__items" aria-live="polite"></ul>
+    <div class="basket__thanks">
+      <span class="tk-icon" aria-hidden="true">{icon("heart")}</span>
+      <h3 tabindex="-1">Thank you, <span class="tk-name"></span>!</h3>
+      <p>Your order <strong class="tk-ref"></strong> is ready in WhatsApp. <strong>Tap Send in WhatsApp</strong> so it reaches us.</p>
+      <p class="tk-sum">Total: <span class="tk-total"></span></p>
+      <p>We will reply on WhatsApp to confirm availability, delivery, and the final total. Thank you for choosing handmade.</p>
+      <a class="btn tk-again" href="#" target="_blank" rel="noopener">{icon("whatsapp")} Open WhatsApp again</a>
+      <button class="btn btn--ghost" type="button" data-thanks-done>Done, start a new basket</button>
+      <button class="basket__clear" type="button" data-thanks-back>Back to my basket</button>
+    </div>
     <div class="basket__foot">
       <p class="basket__total"><span>Total</span><strong>$0</strong></p>
       <p class="basket__note" hidden>Items without a price will be confirmed on WhatsApp.</p>
