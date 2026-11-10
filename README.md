@@ -42,6 +42,9 @@ One object per product. See `data/products.example.json`.
 ### data/gallery.json
 `[{"src": "/assets/img/gallery/x.webp", "alt": "...", "caption": "...", "category": "Weddings", "width": 800, "height": 1000}]`. Filters appear automatically when there are 2+ categories.
 
+## Shop and basket
+`/shop/` lists every product with collection filters. Visitors tap **Add to Basket** on any product, adjust quantities in the basket panel, enter their name and delivery area, and tap **Checkout on WhatsApp**. WhatsApp opens with the full order (items, quantities, prices, total) ready to send. The basket is saved in the visitor's browser. Checkout needs `whatsappNumber` set in `data/site.json`.
+
 ## Images
 Put files in `/assets/img/products`, `/collections`, `/gallery`, `/site`. Export as WebP, about 1200 px on the long side, under 200 KB. Set `width`/`height` in gallery items to the real ratio to avoid layout shift.
 

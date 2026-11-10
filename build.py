@@ -80,6 +80,9 @@ def icon(name):
         "left": '<path d="m15 18-6-6 6-6"/>',
         "right": '<path d="m9 18 6-6-6-6"/>',
         "plus": '<path d="M12 5v14M5 12h14"/>',
+        "minus": '<path d="M5 12h14"/>',
+        "bag": '<path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/>',
+        "trash": '<path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/>',
         "heart": '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/>',
         "sparkle": '<path d="M12 3v4M12 17v4M3 12h4M17 12h4M6.3 6.3l2.5 2.5M15.2 15.2l2.5 2.5M6.3 17.7l2.5-2.5M15.2 8.8l2.5-2.5"/>',
         "gift": '<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12M12 8S10.5 4 8 4a2 2 0 0 0 0 4M12 8s1.5-4 4-4a2 2 0 0 1 0 4"/>',
@@ -123,7 +126,7 @@ def tile_fallback():
 
 
 # ---------- layout ----------
-NAV = [("/", "Home"), ("/collections/", "Collections"), ("/about/", "About Us"), ("/gallery/", "Gallery"), ("/contact/", "Contact")]
+NAV = [("/", "Home"), ("/shop/", "Shop"), ("/collections/", "Collections"), ("/about/", "About Us"), ("/gallery/", "Gallery"), ("/contact/", "Contact")]
 
 
 def head(title, desc, path, og_image=None, schema=None, noindex=False):
@@ -177,6 +180,7 @@ def header(active):
     <div class="header-actions">
       <button class="icon-btn" type="button" data-open-search aria-label="Search products">{icon("search")}</button>
       <a class="icon-btn wa-icon" href="{esc(WA_HELLO)}" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">{icon("whatsapp")}</a>
+      <button class="icon-btn basket-btn" type="button" data-open-basket aria-label="Open basket, 0 items">{icon("bag")}<span class="basket-count" hidden>0</span></button>
       <a class="btn btn--sm" href="{esc(WA_ORDER)}" target="_blank" rel="noopener">Order Now</a>
       <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">{icon("menu")}</button>
     </div>
@@ -201,6 +205,30 @@ def header(active):
     <ul class="search-results"></ul>
   </div>
 </div>
+<div class="drawer basket" id="basket" aria-hidden="true">
+  <div class="drawer__scrim" data-close-basket></div>
+  <div class="drawer__panel basket__panel" role="dialog" aria-modal="true" aria-labelledby="basket-title">
+    <div class="drawer__top"><h2 id="basket-title">Your Basket</h2>
+      <button class="icon-btn" type="button" data-close-basket aria-label="Close basket">{icon("x")}</button></div>
+    <div class="basket__empty">
+      <p>Your basket is empty. Add the pieces you love, then send your order to us on WhatsApp.</p>
+      <a class="btn btn--ghost" href="/shop/">Browse the shop</a>
+    </div>
+    <ul class="basket__items" aria-live="polite"></ul>
+    <div class="basket__foot">
+      <p class="basket__total"><span>Total</span><strong>$0</strong></p>
+      <p class="basket__note" hidden>Items without a price will be confirmed on WhatsApp.</p>
+      <form class="basket__form" novalidate>
+        <div class="field"><label for="b-name">Full Name</label><input id="b-name" name="name" autocomplete="name" required><p class="err" aria-live="polite"></p></div>
+        <div class="field"><label for="b-addr">Delivery Area or Address</label><input id="b-addr" name="address" autocomplete="street-address" required><p class="err" aria-live="polite"></p></div>
+        <div class="field"><label for="b-note">Notes <span style="font-weight:400;color:var(--muted)">(optional)</span></label><textarea id="b-note" name="note" rows="2" placeholder="Colors, names to add, occasion date"></textarea></div>
+        <button class="btn" type="submit">{icon("whatsapp")} Checkout on WhatsApp</button>
+        <button class="basket__clear" type="button" data-clear-basket>Empty basket</button>
+      </form>
+    </div>
+  </div>
+</div>
+<p class="toast" role="status" aria-live="polite"></p>
 <main id="main">
 """
 
@@ -230,7 +258,9 @@ def footer():
         <li><a href="{esc(site["instagram"])}" target="_blank" rel="noopener">{esc(site["instagramHandle"])}</a></li>
       </ul></div>
     </div>
-    <div class="footer-bottom"><span>&copy; {year} Magic House. All Rights Reserved.</span><a href="/privacy-policy/">Privacy Policy</a></div>
+    <div class="footer-bottom"><span>&copy; {year} Magic House. All Rights Reserved.</span>
+      <span>Structured &amp; Developed By <a href="https://www.colartdigitalmarketingagency.com" target="_blank" rel="noopener">Colart Digital Marketing Agency</a></span>
+      <a href="/privacy-policy/">Privacy Policy</a></div>
   </div>
 </footer>
 <a class="wa-float" href="{esc(WA_HELLO)}" target="_blank" rel="noopener" aria-label="Chat with Magic House on WhatsApp">{icon("whatsapp")}</a>
@@ -283,21 +313,38 @@ def breadcrumbs(items, left=False):
 
 
 # ---------- components ----------
+def basket_data(p):
+    v = p.get("price")
+    try:
+        v = float(v) if v not in (None, "") else None
+    except (TypeError, ValueError):
+        v = None
+    return esc(json.dumps({"id": p["slug"], "name": p["name"], "price": v,
+                           "img": p.get("thumb") or (p["images"][0] if p["images"] else ""),
+                           "url": f"/products/{p['slug']}/"}, ensure_ascii=False))
+
+
+def add_button(p, cls="btn"):
+    if not p["available"]:
+        return f'<button class="{cls}" type="button" disabled>Unavailable</button>'
+    return f'<button class="{cls}" type="button" data-add="{basket_data(p)}">{icon("bag")} Add to Basket</button>'
+
+
 def product_card(p):
     url = f"/products/{p['slug']}/"
     img = p.get("thumb") or (p["images"][0] if p["images"] else "")
     media = img_tag(img, p.get("imageAlt") or p["name"], w=560, h=560) if img else tile_fallback()
     pr = price_text(p)
     badge = '' if p["available"] else '<span class="badge">Currently unavailable</span>'
-    return f"""<article class="product-card">
+    return f"""<article class="product-card" data-col="{esc(p["collection"])}">
   <a class="media" href="{url}" tabindex="-1" aria-hidden="true">{media}{badge}</a>
   <div class="body">
     <h3><a href="{url}">{esc(p["name"])}</a></h3>
     {f'<p class="desc">{esc(p.get("description"))}</p>' if p.get("description") else ""}
     {f'<p class="price">{pr}</p>' if pr else ""}
     <div class="actions">
+      {add_button(p)}
       <a class="btn btn--ghost" href="{url}">View Details</a>
-      <a class="btn" href="{esc(wa_product(p))}" target="_blank" rel="noopener">{icon("whatsapp")} Order via WhatsApp</a>
     </div>
   </div>
 </article>"""
@@ -381,7 +428,7 @@ if WA:
     ORG["contactPoint"] = {"@type": "ContactPoint", "telephone": "+" + WA, "contactType": "sales", "availableLanguage": ["en", "ar"]}
 
 # ---------- clean previous output ----------
-for d in ("collections", "products", "about", "gallery", "contact", "privacy-policy"):
+for d in ("shop", "collections", "products", "about", "gallery", "contact", "privacy-policy"):
     shutil.rmtree(ROOT / d, ignore_errors=True)
 
 featured = [p for p in products if p["featured"]][:8] or products[:8]
@@ -584,13 +631,31 @@ for p in products:
     {'' if p["available"] else '<p class="availability">Currently unavailable. Message us to ask when it will be back, or to order a similar piece.</p>'}
     {f'<p class="desc">{esc(p["description"])}</p>' if p.get("description") else ""}
     <ul class="spec">{specs}</ul>
-    <a class="btn" href="{esc(wa_product(p))}" target="_blank" rel="noopener">{icon("whatsapp")} Order via WhatsApp</a>
-    <a class="btn btn--ghost" href="{esc(WA_CUSTOM)}" target="_blank" rel="noopener">Ask about a custom version</a>
+    {add_button(p)}
+    <a class="btn btn--ghost" href="{esc(wa_product(p))}" target="_blank" rel="noopener">{icon("whatsapp")} Order via WhatsApp</a>
+    <a class="btn btn--text" href="{esc(WA_CUSTOM)}" target="_blank" rel="noopener">Ask about a custom version</a>
   </div>
 </div>
 {rel_html}"""
     page(path, f"{p['name']} | Magic House Lebanon", desc[:158], body, "/collections/",
          og=p["images"][0] if p["images"] else None, schema=[bc_schema, prod_schema])
+
+# ---------- SHOP ----------
+bc, bc_schema = breadcrumbs([("Home", "/"), ("Shop", "/shop/")])
+chips = '<button type="button" data-filter="all" aria-pressed="true">All</button>' + "".join(
+    f'<button type="button" data-filter="{c["slug"]}" aria-pressed="false">{esc(c["title"])}</button>'
+    for c in collections if coll_count(c["slug"]))
+shop_il = {"@context": "https://schema.org", "@type": "ItemList", "name": "Magic House shop", "itemListElement": [
+    {"@type": "ListItem", "position": i + 1, "url": f"{BASE}/products/{p['slug']}/", "name": p["name"]} for i, p in enumerate(products)]}
+page("/shop/", "Shop Handmade Gypsum Decor | Magic House Lebanon",
+     "Shop every Magic House piece: handmade gypsum candles, incense burners, trays, religious gifts, and gift sets. Add to your basket and order on WhatsApp.",
+     f"""<section class="page-hero"><div class="wrap">{bc}<h1>Shop</h1>
+<p>Add the pieces you love to your basket, then send your order to us on WhatsApp in one message.</p></div></section>
+<section class="section" style="padding-top:0"><div class="wrap">
+  <div class="filters" role="group" aria-label="Filter by collection" data-shop-filters>{chips}</div>
+  <p class="shop-count" aria-live="polite">{len(products)} pieces</p>
+  <div class="product-grid" data-shop-grid>{"".join(product_card(p) for p in products)}</div>
+</div></section>{cta_band()}""", "/shop/", schema=[bc_schema, shop_il])
 
 # ---------- ABOUT ----------
 bc, bc_schema = breadcrumbs([("Home", "/"), ("About Us", "/about/")])
@@ -673,7 +738,7 @@ page("/404.html", "Page not found | Magic House", "This page does not exist.",
     {"n": p["name"], "u": f"/products/{p['slug']}/", "c": COLL[p["collection"]]["title"], "d": p.get("description", ""),
      "i": p.get("thumb") or (p["images"][0] if p["images"] else ""), "p": price_text(p)} for p in products], ensure_ascii=False), encoding="utf-8")
 
-urls = ["/", "/collections/", "/about/", "/gallery/", "/contact/", "/privacy-policy/"] + \
+urls = ["/", "/shop/", "/collections/", "/about/", "/gallery/", "/contact/", "/privacy-policy/"] + \
        [f"/collections/{c['slug']}/" for c in collections] + [f"/products/{p['slug']}/" for p in products]
 (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
     "".join(f"  <url><loc>{BASE}{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls) + "</urlset>\n", encoding="utf-8")
