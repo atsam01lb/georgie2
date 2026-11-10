@@ -381,6 +381,27 @@ def arch(src, alt, priority=False):
     return f'<div class="arch arch--outline">{inner}</div>'
 
 
+def hero_slides():
+    by_slug = {p["slug"]: p for p in products}
+    slides = [by_slug[s] for s in site.get("heroSlides", []) if s in by_slug and by_slug[s]["images"]]
+    if not slides:
+        return arch(site.get("heroImage"), site.get("heroImageAlt") or "Magic House handmade gypsum pieces", priority=True)
+    imgs, dots = "", ""
+    for i, p in enumerate(slides):
+        first = i == 0
+        imgs += (f'<figure class="slide{" is-active" if first else ""}" aria-hidden="{"false" if first else "true"}">'
+                 f'<img src="{esc(p["images"][0])}" alt="{esc(p.get("imageAlt") or p["name"])}" width="800" height="1000" decoding="async"'
+                 + (' fetchpriority="high">' if first else ' fetchpriority="low">') +
+                 f'<figcaption><a href="/products/{p["slug"]}/" tabindex="{"0" if first else "-1"}"><span>{esc(p["name"])}</span>'
+                 f'{"<small>" + price_text(p) + "</small>" if price_text(p) else ""}{icon("arrow")}</a></figcaption></figure>')
+        dots += f'<button type="button" class="dot" aria-label="Show {esc(p["name"])}" aria-current="{"true" if first else "false"}"></button>'
+    return (f'<div class="hero-slider" aria-roledescription="carousel" aria-label="Featured Magic House pieces">'
+            f'<div class="arch-frame"><div class="arch arch--outline">{imgs}</div></div>'
+            f'<div class="slider-controls"><button type="button" class="icon-btn slider-pause" aria-label="Pause slideshow" data-playing="true">'
+            f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path class="ic-pause" d="M9 6v12M15 6v12"/><path class="ic-play" d="M8 5l11 7-11 7Z"/></svg></button>'
+            f'<div class="dots">{dots}</div></div></div>')
+
+
 def faq_html(items):
     items = [f for f in items if f.get("a")]
     if not items:
@@ -495,7 +516,7 @@ home = f"""
       <li>{icon("calendar")}Perfect for Every Occasion</li>
     </ul>
   </div>
-  <div class="hero-visual">{arch(site.get("heroImage"), site.get("heroImageAlt") or "Magic House handmade gypsum pieces", priority=True)}</div>
+  <div class="hero-visual">{hero_slides()}</div>
 </div></section>
 
 <section class="section section--tight" aria-labelledby="collections-title"><div class="wrap">

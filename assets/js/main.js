@@ -319,6 +319,45 @@
     var h = location.hash.replace("#", ""); if (h && $('[data-filter="' + h + '"]', sf)) applyF(h);
   }
 
+  /* Hero slideshow */
+  $$(".hero-slider").forEach(function (sl) {
+    var slides = $$(".slide", sl), dots = $$(".dot", sl), btn = $(".slider-pause", sl);
+    if (slides.length < 2) return;
+    var cur = 0, timer = null, hovering = false;
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var playing = !reduce;
+    function go(i) {
+      slides[cur].classList.remove("is-active"); slides[cur].setAttribute("aria-hidden", "true");
+      var a = $("a", slides[cur]); a && a.setAttribute("tabindex", "-1");
+      dots[cur].setAttribute("aria-current", "false");
+      cur = (i + slides.length) % slides.length;
+      slides[cur].classList.add("is-active"); slides[cur].setAttribute("aria-hidden", "false");
+      a = $("a", slides[cur]); a && a.setAttribute("tabindex", "0");
+      dots[cur].setAttribute("aria-current", "true");
+    }
+    function stop() { clearInterval(timer); timer = null; }
+    function start() { stop(); if (playing && !hovering && !document.hidden) timer = setInterval(function () { go(cur + 1); }, 4500); }
+    function setPlaying(p) {
+      playing = p; btn.setAttribute("data-playing", String(p));
+      btn.setAttribute("aria-label", p ? "Pause slideshow" : "Play slideshow");
+      start();
+    }
+    dots.forEach(function (d, i) { d.addEventListener("click", function () { go(i); start(); }); });
+    btn.addEventListener("click", function () { setPlaying(!playing); });
+    sl.addEventListener("mouseenter", function () { hovering = true; stop(); });
+    sl.addEventListener("mouseleave", function () { hovering = false; start(); });
+    sl.addEventListener("focusin", function () { hovering = true; stop(); });
+    sl.addEventListener("focusout", function () { hovering = false; start(); });
+    document.addEventListener("visibilitychange", start);
+    var x0 = null;
+    sl.addEventListener("touchstart", function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    sl.addEventListener("touchend", function (e) {
+      if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; x0 = null;
+      if (Math.abs(dx) > 40) { go(cur + (dx < 0 ? 1 : -1)); start(); }
+    });
+    setPlaying(playing);
+  });
+
   /* Contact form */
   var form = $("#contact-form");
   if (form) {

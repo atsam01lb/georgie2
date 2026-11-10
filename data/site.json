@@ -13,8 +13,8 @@
   "currency": "USD",
   "heroImage": "/assets/img/site/hero.webp",
   "heroImageAlt": "Gypsum tray with lotus candle, incense box, and diffuser by Magic House",
-  "aboutImage": "/assets/img/site/about.webp",
-  "aboutImageAlt": "Blue and white marble-effect gypsum incense box by Magic House",
+  "aboutImage": "/assets/img/products/white-tray-set-with-vase-and-candle-1.webp",
+  "aboutImageAlt": "White gypsum tray set with vase and candle by Magic House",
   "faq": [
     {
       "q": "What products does Magic House offer?",
@@ -44,5 +44,14 @@
       "q": "Does Magic House deliver across Lebanon?",
       "a": ""
     }
+  ],
+  "heroSlides": [
+    "christmas-set-home-decor",
+    "floral-insence-box",
+    "lotus-incense-set",
+    "burgundy-gypsum-round-tray-santa-christmas-set",
+    "gypsum-wedding-set",
+    "holy-family-tray-set-with-incence",
+    "marble-tray-insence-box-pink"
   ]
 }
