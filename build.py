@@ -346,7 +346,7 @@ def product_card(p):
     media = img_tag(img, p.get("imageAlt") or p["name"], w=560, h=560) if img else tile_fallback()
     pr = price_text(p)
     badge = '' if p["available"] else '<span class="badge">Currently unavailable</span>'
-    return f"""<article class="product-card" data-col="{esc(p["collection"])}">
+    return f"""<article class="product-card" data-col="{esc(p["collection"])}" data-search="{esc((p["name"] + " " + COLL[p["collection"]]["title"]).lower())}">
   <a class="media" href="{url}" tabindex="-1" aria-hidden="true">{media}{badge}</a>
   <div class="body">
     <h3><a href="{url}">{esc(p["name"])}</a></h3>
@@ -397,8 +397,7 @@ def hero_slides():
         dots += f'<button type="button" class="dot" aria-label="Show {esc(p["name"])}" aria-current="{"true" if first else "false"}"></button>'
     return (f'<div class="hero-slider" aria-roledescription="carousel" aria-label="Featured Magic House pieces">'
             f'<div class="arch-frame"><div class="arch arch--outline">{imgs}</div></div>'
-            f'<div class="slider-controls"><button type="button" class="icon-btn slider-pause" aria-label="Pause slideshow" data-playing="true">'
-            f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path class="ic-pause" d="M9 6v12M15 6v12"/><path class="ic-play" d="M8 5l11 7-11 7Z"/></svg></button>'
+            f'<div class="slider-controls">'
             f'<div class="dots">{dots}</div></div></div>')
 
 
@@ -683,9 +682,16 @@ page("/shop/", "Shop Handmade Gypsum Decor | Magic House Lebanon",
      f"""<section class="page-hero"><div class="wrap">{bc}<h1>Shop</h1>
 <p>Add the pieces you love to your basket, then send your order to us on WhatsApp in one message.</p></div></section>
 <section class="section" style="padding-top:0"><div class="wrap">
+  <div class="shop-search">
+    <label class="sr-only" for="shop-q">Search the shop</label>
+    {icon("search")}
+    <input id="shop-q" type="search" placeholder="Search items, e.g. candle, Mary, tray, Christmas" autocomplete="off" data-shop-search>
+  </div>
   <div class="filters" role="group" aria-label="Filter by collection" data-shop-filters>{chips}</div>
   <p class="shop-count" aria-live="polite">{len(products)} pieces</p>
-  <div class="product-grid" data-shop-grid>{"".join(product_card(p) for p in products)}</div>
+  <div class="product-grid" id="shop-items" data-shop-grid>{"".join(product_card(p) for p in products)}</div>
+  <div class="empty-note shop-empty" hidden><h3>No items found</h3><p>Try another word or category, or ask us on WhatsApp.</p>
+    <a class="btn" href="{esc(WA_HELLO)}" target="_blank" rel="noopener">{icon("whatsapp")} Ask on WhatsApp</a></div>
 </div></section>{cta_band()}""", "/shop/", schema=[bc_schema, shop_il])
 
 # ---------- ABOUT ----------

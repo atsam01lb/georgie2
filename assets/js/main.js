@@ -305,23 +305,39 @@
   window.addEventListener("storage", function (e) { if (e.key === KEY) { cart = load(); renderBasket(); } });
   renderBasket();
 
-  /* Shop filters */
+  /* Shop filters + search */
   var sf = $("[data-shop-filters]"), sg = $("[data-shop-grid]");
   if (sf && sg) {
-    var cards = $$(".product-card", sg), cnt = $(".shop-count");
-    var applyF = function (f) {
-      var n = 0;
-      cards.forEach(function (c) { var show = f === "all" || c.getAttribute("data-col") === f; c.hidden = !show; if (show) n++; });
-      $$("button", sf).forEach(function (x) { x.setAttribute("aria-pressed", String(x.getAttribute("data-filter") === f)); });
+    var cards = $$(".product-card", sg), cnt = $(".shop-count"), sq = $("[data-shop-search]"), sempty = $(".shop-empty");
+    var curF = "all";
+    var norm2 = function (s) { return (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim(); };
+    var apply = function () {
+      var terms = norm2(sq ? sq.value : "").split(/\s+/).filter(Boolean), n = 0;
+      cards.forEach(function (c) {
+        var hay = norm2(c.getAttribute("data-search"));
+        var show = (curF === "all" || c.getAttribute("data-col") === curF) && terms.every(function (t) { return hay.indexOf(t) > -1; });
+        c.hidden = !show; if (show) n++;
+      });
+      $$("button", sf).forEach(function (x) { x.setAttribute("aria-pressed", String(x.getAttribute("data-filter") === curF)); });
       if (cnt) cnt.textContent = n + (n === 1 ? " piece" : " pieces");
+      if (sempty) sempty.hidden = n > 0;
     };
-    $$("button", sf).forEach(function (b) { b.addEventListener("click", function () { var f = b.getAttribute("data-filter"); applyF(f); try { history.replaceState(null, "", f === "all" ? location.pathname : "#" + f); } catch (e) {} }); });
-    var h = location.hash.replace("#", ""); if (h && $('[data-filter="' + h + '"]', sf)) applyF(h);
+    $$("button", sf).forEach(function (b) {
+      b.addEventListener("click", function () {
+        curF = b.getAttribute("data-filter"); apply();
+        try { history.replaceState(null, "", curF === "all" ? location.pathname : "#" + curF); } catch (e) {}
+        var top = sf.getBoundingClientRect().top + window.scrollY - (parseInt(getComputedStyle(document.documentElement).scrollPaddingTop, 10) || 90);
+        window.scrollTo({ top: top, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      });
+    });
+    if (sq) sq.addEventListener("input", apply);
+    var h = location.hash.replace("#", ""); if (h && $('[data-filter="' + h + '"]', sf)) { curF = h; }
+    apply();
   }
 
   /* Hero slideshow */
   $$(".hero-slider").forEach(function (sl) {
-    var slides = $$(".slide", sl), dots = $$(".dot", sl), btn = $(".slider-pause", sl);
+    var slides = $$(".slide", sl), dots = $$(".dot", sl);
     if (slides.length < 2) return;
     var cur = 0, timer = null, hovering = false;
     var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -336,14 +352,9 @@
       dots[cur].setAttribute("aria-current", "true");
     }
     function stop() { clearInterval(timer); timer = null; }
-    function start() { stop(); if (playing && !hovering && !document.hidden) timer = setInterval(function () { go(cur + 1); }, 4500); }
-    function setPlaying(p) {
-      playing = p; btn.setAttribute("data-playing", String(p));
-      btn.setAttribute("aria-label", p ? "Pause slideshow" : "Play slideshow");
-      start();
-    }
+    function start() { stop(); if (playing && !hovering && !document.hidden) timer = setInterval(function () { go(cur + 1); }, 2000); }
+    function setPlaying(p) { playing = p; start(); }
     dots.forEach(function (d, i) { d.addEventListener("click", function () { go(i); start(); }); });
-    btn.addEventListener("click", function () { setPlaying(!playing); });
     sl.addEventListener("mouseenter", function () { hovering = true; stop(); });
     sl.addEventListener("mouseleave", function () { hovering = false; start(); });
     sl.addEventListener("focusin", function () { hovering = true; stop(); });
