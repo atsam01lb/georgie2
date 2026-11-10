@@ -1,4 +1,4 @@
-/* Magic House — main stylesheet */
+/* Magic House: main stylesheet */
 :root {
   --burgundy: #47070D;
   --burgundy-dark: #310509;
@@ -401,3 +401,42 @@ p { margin: 0 0 1em; }
 .collection-card.is-soon .tile-fallback { background: radial-gradient(120% 80% at 50% 25%, #5a0d14 0%, var(--burgundy) 50%, var(--burgundy-dark) 100%); }
 .collection-card.is-soon .tile-fallback img { opacity: .9; filter: brightness(0) invert(94%) sepia(8%) saturate(300%) hue-rotate(330deg); }
 .collection-card.is-soon .soon { background: var(--cream); color: var(--burgundy); }
+
+/* Basket */
+.basket-btn { position: relative; }
+.basket-count { position: absolute; top: 4px; right: 2px; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 999px; background: var(--burgundy); color: var(--cream); font-size: .68rem; line-height: 18px; text-align: center; font-weight: 500; }
+.basket-count[hidden] { display: none; }
+.basket__panel { width: min(92vw, 420px); padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px)); }
+.basket__panel h2 { font-size: 1.9rem; margin: 0; }
+.basket__empty { display: none; text-align: center; padding: 2rem .5rem; color: var(--muted); }
+.basket.is-empty .basket__empty { display: block; }
+.basket.is-empty .basket__foot { display: none; }
+.basket__items { list-style: none; margin: 0; padding: 0; display: grid; gap: .8rem; }
+.bitem { display: grid; grid-template-columns: 64px 1fr; gap: .8rem; padding-bottom: .8rem; border-bottom: 1px solid var(--line); }
+.bitem img, .bthumb { width: 64px; height: 64px; border-radius: var(--radius-s); object-fit: cover; background: var(--beige); }
+.binfo { display: flex; flex-direction: column; gap: .2rem; min-width: 0; }
+.bname { font-family: var(--serif); font-size: 1.15rem; color: var(--burgundy); text-decoration: none; line-height: 1.2; }
+.bname:hover { text-decoration: underline; }
+.bprice { font-size: .9rem; color: var(--brown); }
+.bqty { display: flex; align-items: center; gap: .35rem; margin-top: .25rem; }
+.bqty button[data-dec], .bqty button[data-inc] { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line); background: var(--white); color: var(--burgundy); cursor: pointer; }
+.bqty button svg { width: 16px; height: 16px; }
+.bqty .q { min-width: 1.6rem; text-align: center; font-weight: 500; }
+.bremove, .basket__clear { margin-left: auto; border: 0; background: none; color: var(--muted); font-size: .85rem; text-decoration: underline; cursor: pointer; padding: .4rem; }
+.basket__foot { margin-top: 1.2rem; }
+.basket__total { display: flex; justify-content: space-between; align-items: baseline; font-size: 1.05rem; margin-bottom: .3rem; }
+.basket__total strong { font-family: var(--serif); font-size: 1.6rem; color: var(--burgundy); font-weight: 500; }
+.basket__note { font-size: .82rem; color: var(--muted); }
+.basket__form { margin-top: 1rem; }
+.basket__form .field input, .basket__form .field textarea { min-height: 44px; }
+.basket__form .field textarea { min-height: 70px; }
+.basket__form .btn[type=submit] { width: 100%; }
+.basket__clear { display: block; margin: .6rem auto 0; }
+.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); z-index: 400; transform: translate(-50%, 20px); opacity: 0; pointer-events: none; background: var(--burgundy-dark); color: var(--cream); padding: .75rem 1.2rem; border-radius: 999px; font-size: .9rem; box-shadow: var(--shadow); transition: opacity .3s ease, transform .3s ease; max-width: calc(100vw - 2rem); text-align: center; }
+.toast.is-on { opacity: 1; transform: translate(-50%, 0); }
+.btn.is-added { background: var(--gold); border-color: var(--gold); }
+.btn[disabled] { opacity: .5; cursor: not-allowed; }
+.btn--text { background: none; border-color: transparent; color: var(--burgundy); text-decoration: underline; }
+.btn--text:hover { background: none; border-color: transparent; color: var(--burgundy-dark); }
+.shop-count { text-align: center; color: var(--muted); font-size: .9rem; margin: -1rem 0 1.5rem; }
+.footer-bottom a { text-decoration: underline; }

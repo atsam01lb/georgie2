@@ -1,4 +1,4 @@
-/* Magic House — site behaviour (no dependencies) */
+/* Magic House: site behaviour (no dependencies) */
 (function () {
   "use strict";
   var cfg = window.MH || {};
@@ -79,7 +79,7 @@
       var li = document.createElement("li");
       li.innerHTML = '<a href="' + rel(p.u) + '">' + (p.i ? '<img src="' + rel(p.i) + '" alt="" loading="lazy" width="60" height="60">' : '<span class="thumb"></span>') +
         '<span><strong></strong><small></small></span></a>';
-      $("strong", li).textContent = p.n; $("small", li).textContent = p.c + (p.p ? " \u2013 " + p.p : "");
+      $("strong", li).textContent = p.n; $("small", li).textContent = p.c + (p.p ? ", " + p.p : "");
       list.appendChild(li);
     });
   }
@@ -170,6 +170,128 @@
       });
     });
   });
+
+
+  /* Basket */
+  var KEY = "mh-basket-v1", basketEl = $("#basket"), toastEl = $(".toast"), toastT;
+  function load() { try { var d = JSON.parse(localStorage.getItem(KEY) || "[]"); return Array.isArray(d) ? d : []; } catch (e) { return []; } }
+  var cart = load();
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(cart)); } catch (e) {} }
+  function money(v) { return "$" + (Math.round(v * 100) / 100).toFixed(2).replace(/\.00$/, ""); }
+  function toast(msg) {
+    if (!toastEl) return;
+    toastEl.textContent = msg; toastEl.classList.add("is-on");
+    clearTimeout(toastT); toastT = setTimeout(function () { toastEl.classList.remove("is-on"); }, 2600);
+  }
+  function count() { return cart.reduce(function (s, i) { return s + i.qty; }, 0); }
+  function renderBasket() {
+    var n = count();
+    $$(".basket-count").forEach(function (b) { b.textContent = n > 99 ? "99+" : n; b.hidden = n === 0; });
+    $$("[data-open-basket]").forEach(function (b) { b.setAttribute("aria-label", "Open basket, " + n + " item" + (n === 1 ? "" : "s")); });
+    if (!basketEl) return;
+    var list = $(".basket__items", basketEl);
+    list.innerHTML = "";
+    basketEl.classList.toggle("is-empty", !cart.length);
+    var total = 0, unpriced = false;
+    cart.forEach(function (it, idx) {
+      if (it.price == null) unpriced = true; else total += it.price * it.qty;
+      var li = document.createElement("li"); li.className = "bitem";
+      li.innerHTML = (it.img ? '<img src="' + rel(it.img) + '" alt="" width="64" height="64">' : '<span class="bthumb"></span>') +
+        '<div class="binfo"><a class="bname" href="' + rel(it.url) + '"></a><span class="bprice"></span>' +
+        '<div class="bqty"><button type="button" data-dec aria-label="Decrease quantity">' + ICON_MINUS + '</button>' +
+        '<span class="q" aria-live="polite"></span><button type="button" data-inc aria-label="Increase quantity">' + ICON_PLUS + '</button>' +
+        '<button type="button" class="bremove" data-remove>Remove</button></div></div>';
+      $(".bname", li).textContent = it.name;
+      $(".bprice", li).textContent = it.price == null ? "Price on request" : money(it.price * it.qty);
+      $(".q", li).textContent = it.qty;
+      $("[data-dec]", li).setAttribute("aria-label", "Decrease quantity of " + it.name);
+      $("[data-inc]", li).setAttribute("aria-label", "Increase quantity of " + it.name);
+      $("[data-remove]", li).setAttribute("aria-label", "Remove " + it.name);
+      $("[data-dec]", li).onclick = function () { if (it.qty > 1) { it.qty--; save(); renderBasket(); } else { removeAt(idx); } };
+      $("[data-inc]", li).onclick = function () { if (it.qty < 99) { it.qty++; save(); renderBasket(); } };
+      $("[data-remove]", li).onclick = function () { removeAt(idx); };
+      list.appendChild(li);
+    });
+    $(".basket__total strong", basketEl).textContent = money(total) + (unpriced ? " +" : "");
+    $(".basket__note", basketEl).hidden = !unpriced;
+  }
+  function removeAt(i) {
+    var it = cart[i]; cart.splice(i, 1); save(); renderBasket();
+    toast(it.name + " removed from basket");
+    var next = $(".basket__items [data-remove]", basketEl) || $(".basket__empty a", basketEl);
+    next && next.focus();
+  }
+  var ICON_MINUS = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14"/></svg>';
+  var ICON_PLUS = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>';
+  function openBasket() {
+    lastFocus = document.activeElement;
+    basketEl.classList.add("is-open"); basketEl.removeAttribute("aria-hidden"); document.body.style.overflow = "hidden";
+    setTimeout(function () { var c = $("[data-close-basket].icon-btn", basketEl); c && c.focus(); }, 50);
+  }
+  function closeBasket() {
+    basketEl.classList.remove("is-open"); basketEl.setAttribute("aria-hidden", "true"); document.body.style.overflow = "";
+    lastFocus && lastFocus.focus();
+  }
+  if (basketEl) {
+    $$("[data-open-basket]").forEach(function (b) { b.addEventListener("click", openBasket); });
+    $$("[data-close-basket]", basketEl).forEach(function (b) { b.addEventListener("click", closeBasket); });
+    basketEl.addEventListener("keydown", function (e) { if (e.key === "Escape") closeBasket(); trap(basketEl, e); });
+    $("[data-clear-basket]", basketEl).addEventListener("click", function () { cart = []; save(); renderBasket(); toast("Basket emptied"); $(".basket__empty a", basketEl).focus(); });
+    var bform = $(".basket__form", basketEl);
+    bform.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!cart.length) return;
+      var ok = true;
+      ["name", "address"].forEach(function (n) {
+        var inp = bform[n], f = inp.closest(".field"), bad = inp.value.trim().length < 2;
+        f.classList.toggle("has-error", bad); inp.setAttribute("aria-invalid", String(bad));
+        $(".err", f).textContent = bad ? (n === "name" ? "Enter your full name." : "Enter your delivery area or address.") : "";
+        if (bad && ok) { inp.focus(); ok = false; }
+      });
+      if (!ok) return;
+      var total = 0, unpriced = false;
+      var lines = cart.map(function (it, i) {
+        var line = (i + 1) + ". " + it.name + " x " + it.qty;
+        if (it.price == null) { unpriced = true; line += ": price on request"; }
+        else { total += it.price * it.qty; line += ": " + money(it.price * it.qty); }
+        return line;
+      });
+      var base = (location.origin && location.origin !== "null") ? location.href.replace(/[#?].*$/, "") : "";
+      var msg = "Hello Magic House! I would like to place an order:\n\n" + lines.join("\n") +
+        "\n\nTotal: " + money(total) + (unpriced ? " (plus items with price on request)" : "") +
+        "\n\nName: " + bform.name.value.trim() + "\nDelivery: " + bform.address.value.trim() +
+        (bform.note.value.trim() ? "\nNotes: " + bform.note.value.trim() : "") +
+        "\n\nPlease confirm availability and delivery.";
+      window.open(waLink(msg), "_blank", "noopener");
+      toast("WhatsApp opened with your order. Tap send there to confirm.");
+    });
+  }
+  $$("[data-add]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var d; try { d = JSON.parse(btn.getAttribute("data-add")); } catch (e) { return; }
+      var found = cart.filter(function (i) { return i.id === d.id; })[0];
+      if (found) found.qty = Math.min(99, found.qty + 1); else cart.push({ id: d.id, name: d.name, price: d.price, img: d.img, url: d.url, qty: 1 });
+      save(); renderBasket();
+      toast(d.name + " added to basket");
+      btn.classList.add("is-added"); setTimeout(function () { btn.classList.remove("is-added"); }, 900);
+    });
+  });
+  window.addEventListener("storage", function (e) { if (e.key === KEY) { cart = load(); renderBasket(); } });
+  renderBasket();
+
+  /* Shop filters */
+  var sf = $("[data-shop-filters]"), sg = $("[data-shop-grid]");
+  if (sf && sg) {
+    var cards = $$(".product-card", sg), cnt = $(".shop-count");
+    var applyF = function (f) {
+      var n = 0;
+      cards.forEach(function (c) { var show = f === "all" || c.getAttribute("data-col") === f; c.hidden = !show; if (show) n++; });
+      $$("button", sf).forEach(function (x) { x.setAttribute("aria-pressed", String(x.getAttribute("data-filter") === f)); });
+      if (cnt) cnt.textContent = n + (n === 1 ? " piece" : " pieces");
+    };
+    $$("button", sf).forEach(function (b) { b.addEventListener("click", function () { var f = b.getAttribute("data-filter"); applyF(f); try { history.replaceState(null, "", f === "all" ? location.pathname : "#" + f); } catch (e) {} }); });
+    var h = location.hash.replace("#", ""); if (h && $('[data-filter="' + h + '"]', sf)) applyF(h);
+  }
 
   /* Contact form */
   var form = $("#contact-form");
