@@ -1,5 +1,293 @@
 [
   {
+    "src": "/assets/img/products/christmas-coloring-box-1.webp",
+    "thumb": "/assets/img/products/christmas-coloring-box-thumb.webp",
+    "alt": "Christmas Coloring Box, handmade Christmas decor by Magic House",
+    "caption": "Christmas Coloring Box",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/candle-christmas-cave-gypsum-tray-1.webp",
+    "thumb": "/assets/img/products/candle-christmas-cave-gypsum-tray-thumb.webp",
+    "alt": "Candle Christmas Cave + Gypsum Tray, handmade Christmas decor by Magic House",
+    "caption": "Candle Christmas Cave + Gypsum Tray",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/round-gypsum-green-tray-candles-1.webp",
+    "thumb": "/assets/img/products/round-gypsum-green-tray-candles-thumb.webp",
+    "alt": "Round Gypsum Green Tray + Candles, handmade Christmas decor by Magic House",
+    "caption": "Round Gypsum Green Tray + Candles",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/christmas-set-home-decor-1.webp",
+    "thumb": "/assets/img/products/christmas-set-home-decor-thumb.webp",
+    "alt": "Christmas Set Home Decor, handmade Christmas decor by Magic House",
+    "caption": "Christmas Set Home Decor",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/white-gypsum-jare-red-star-1.webp",
+    "thumb": "/assets/img/products/white-gypsum-jare-red-star-thumb.webp",
+    "alt": "White Gypsum Jare + Red Star, handmade Christmas decor by Magic House",
+    "caption": "White Gypsum Jare + Red Star",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/christmas-ball-1.webp",
+    "thumb": "/assets/img/products/christmas-ball-thumb.webp",
+    "alt": "Christmas Ball, handmade Christmas decor by Magic House",
+    "caption": "Christmas Ball",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/white-gypsum-jare-red-gift-1.webp",
+    "thumb": "/assets/img/products/white-gypsum-jare-red-gift-thumb.webp",
+    "alt": "White Gypsum Jare + Red Gift, handmade Christmas decor by Magic House",
+    "caption": "White Gypsum Jare + Red Gift",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/wihte-christmas-tree-yellow-candle-1.webp",
+    "thumb": "/assets/img/products/wihte-christmas-tree-yellow-candle-thumb.webp",
+    "alt": "Wihte Christmas Tree + Yellow Candle, handmade Christmas decor by Magic House",
+    "caption": "Wihte Christmas Tree + Yellow Candle",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/white-gypsum-santa-claus-yellow-candle-1.webp",
+    "thumb": "/assets/img/products/white-gypsum-santa-claus-yellow-candle-thumb.webp",
+    "alt": "White Gypsum Santa Claus + Yellow Candle, handmade Christmas decor by Magic House",
+    "caption": "White Gypsum Santa Claus + Yellow Candle",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/red-gypsum-santa-claus-white-candle-1.webp",
+    "thumb": "/assets/img/products/red-gypsum-santa-claus-white-candle-thumb.webp",
+    "alt": "Red Gypsum Santa Claus + White Candle, handmade Christmas decor by Magic House",
+    "caption": "Red Gypsum Santa Claus + White Candle",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/white-christmas-oval-m-tray-christmas-candle-1.webp",
+    "thumb": "/assets/img/products/white-christmas-oval-m-tray-christmas-candle-thumb.webp",
+    "alt": "White Christmas Oval M Tray + Christmas Candle, handmade Christmas decor by Magic House",
+    "caption": "White Christmas Oval M Tray + Christmas Candle",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/burgundy-gypsum-round-tray-santa-christmas-set-1.webp",
+    "thumb": "/assets/img/products/burgundy-gypsum-round-tray-santa-christmas-set-thumb.webp",
+    "alt": "Burgundy Gypsum Round Tray + Santa + Christmas Set, handmade Christmas decor by Magic House",
+    "caption": "Burgundy Gypsum Round Tray + Santa + Christmas Set",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/christmas-gypsum-bowl-candle-1.webp",
+    "thumb": "/assets/img/products/christmas-gypsum-bowl-candle-thumb.webp",
+    "alt": "Christmas Gypsum Bowl + Candle, handmade Christmas decor by Magic House",
+    "caption": "Christmas Gypsum Bowl + Candle",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/christmas-gypsum-quarry-bowl-candle-1.webp",
+    "thumb": "/assets/img/products/christmas-gypsum-quarry-bowl-candle-thumb.webp",
+    "alt": "Christmas Gypsum Quarry Bowl + Candle, handmade Christmas decor by Magic House",
+    "caption": "Christmas Gypsum Quarry Bowl + Candle",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/gypsum-pot-candle-tree-1.webp",
+    "thumb": "/assets/img/products/gypsum-pot-candle-tree-thumb.webp",
+    "alt": "Gypsum Pot + Candle Tree, handmade Christmas decor by Magic House",
+    "caption": "Gypsum Pot + Candle Tree",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/white-gypsum-tree-candle-1.webp",
+    "thumb": "/assets/img/products/white-gypsum-tree-candle-thumb.webp",
+    "alt": "White Gypsum Tree + Candle, handmade Christmas decor by Magic House",
+    "caption": "White Gypsum Tree + Candle",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/red-oval-xl-gyosym-tray-christmas-candle-tree-1.webp",
+    "thumb": "/assets/img/products/red-oval-xl-gyosym-tray-christmas-candle-tree-thumb.webp",
+    "alt": "Red Oval XL Gyosym Tray + Christmas Candle (Tree), handmade Christmas decor by Magic House",
+    "caption": "Red Oval XL Gyosym Tray + Christmas Candle (Tree)",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/medium-gypsum-christmas-ribbed-cup-candle-1.webp",
+    "thumb": "/assets/img/products/medium-gypsum-christmas-ribbed-cup-candle-thumb.webp",
+    "alt": "Medium Gypsum Christmas Ribbed Cup + Candle, handmade Christmas decor by Magic House",
+    "caption": "Medium Gypsum Christmas Ribbed Cup + Candle",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/large-gypsum-ribbed-cup-candle-1.webp",
+    "thumb": "/assets/img/products/large-gypsum-ribbed-cup-candle-thumb.webp",
+    "alt": "Large Gypsum Ribbed Cup + Candle, handmade Christmas decor by Magic House",
+    "caption": "Large Gypsum Ribbed Cup + Candle",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/rectangle-red-gypsum-tray-christmas-candle-1.webp",
+    "thumb": "/assets/img/products/rectangle-red-gypsum-tray-christmas-candle-thumb.webp",
+    "alt": "Rectangle Red Gypsum Tray + Christmas Candle, handmade Christmas decor by Magic House",
+    "caption": "Rectangle Red Gypsum Tray + Christmas Candle",
+    "category": "Christmas Collection",
+    "width": 560,
+    "height": 420
+  },
+  {
+    "src": "/assets/img/products/gypsum-angel-1.webp",
+    "thumb": "/assets/img/products/gypsum-angel-thumb.webp",
+    "alt": "Gypsum Angel, handmade Christmas decor by Magic House",
+    "caption": "Gypsum Angel",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/gypsum-christmas-tree-1.webp",
+    "thumb": "/assets/img/products/gypsum-christmas-tree-thumb.webp",
+    "alt": "Gypsum Christmas Tree, handmade Christmas decor by Magic House",
+    "caption": "Gypsum Christmas Tree",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/gypsum-christmas-star-1.webp",
+    "thumb": "/assets/img/products/gypsum-christmas-star-thumb.webp",
+    "alt": "Gypsum Christmas Star, handmade Christmas decor by Magic House",
+    "caption": "Gypsum Christmas Star",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/snowman-candle-1.webp",
+    "thumb": "/assets/img/products/snowman-candle-thumb.webp",
+    "alt": "Snowman + Candle, handmade Christmas decor by Magic House",
+    "caption": "Snowman + Candle",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/gypsum-pot-tree-1.webp",
+    "thumb": "/assets/img/products/gypsum-pot-tree-thumb.webp",
+    "alt": "Gypsum Pot + Tree, handmade Christmas decor by Magic House",
+    "caption": "Gypsum Pot + Tree",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/merry-christmas-home-decore-1.webp",
+    "thumb": "/assets/img/products/merry-christmas-home-decore-thumb.webp",
+    "alt": "Merry Christmas Home Decore, handmade Christmas decor by Magic House",
+    "caption": "Merry Christmas Home Decore",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/deer-home-decore-1.webp",
+    "thumb": "/assets/img/products/deer-home-decore-thumb.webp",
+    "alt": "Deer Home Decore, handmade Christmas decor by Magic House",
+    "caption": "Deer Home Decore",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/set-of-snow-flakes-euphorbia-pulcherrima-1.webp",
+    "thumb": "/assets/img/products/set-of-snow-flakes-euphorbia-pulcherrima-thumb.webp",
+    "alt": "Set Of Snow Flakes + Euphorbia Pulcherrima, handmade Christmas decor by Magic House",
+    "caption": "Set Of Snow Flakes + Euphorbia Pulcherrima",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/glass-christmas-candle-1-1.webp",
+    "thumb": "/assets/img/products/glass-christmas-candle-1-thumb.webp",
+    "alt": "Glass Christmas Candle 1, handmade Christmas decor by Magic House",
+    "caption": "Glass Christmas Candle 1",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/glass-christmas-candle-2-1.webp",
+    "thumb": "/assets/img/products/glass-christmas-candle-2-thumb.webp",
+    "alt": "Glass Christmas Candle 2, handmade Christmas decor by Magic House",
+    "caption": "Glass Christmas Candle 2",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/glass-christmas-candle-3-1.webp",
+    "thumb": "/assets/img/products/glass-christmas-candle-3-thumb.webp",
+    "alt": "Glass Christmas Candle 3, handmade Christmas decor by Magic House",
+    "caption": "Glass Christmas Candle 3",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
+    "src": "/assets/img/products/glass-christmas-candle-4-1.webp",
+    "thumb": "/assets/img/products/glass-christmas-candle-4-thumb.webp",
+    "alt": "Glass Christmas Candle 4, handmade Christmas decor by Magic House",
+    "caption": "Glass Christmas Candle 4",
+    "category": "Christmas Collection",
+    "width": 420,
+    "height": 560
+  },
+  {
     "src": "/assets/img/products/jar-candle-1.webp",
     "thumb": "/assets/img/products/jar-candle-thumb.webp",
     "alt": "Jar Candle, handmade by Magic House",
